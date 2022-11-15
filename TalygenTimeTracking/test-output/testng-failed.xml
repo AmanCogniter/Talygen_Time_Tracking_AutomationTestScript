@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testCases.FlagTrackEntryTest">
+        <methods>
+          <include name="validationOfUnFlagedFunctionality"/>
+          <include name="validationOfUpdateFunctionality"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="validationOfSearchFunctionality"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="validationCheck"/>
+          <include name="setUp"/>
+          <include name="validationOfFlagedFunctionality"/>
+        </methods>
+      </class> <!-- testCases.FlagTrackEntryTest -->
+      <class name="testCases.CompanySetupAddUserTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="addUser"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="setUp"/>
+          <include name="ValidationCheck"/>
+        </methods>
+      </class> <!-- testCases.CompanySetupAddUserTest -->
+      <class name="testCases.TimeSheetTest">
+        <methods>
+          <include name="ValidationCheck"/>
+          <include name="closeBrowser"/>
+          <include name="validateSendForApproval"/>
+          <include name="beforeMethod"/>
+          <include name="validatefunctionalityOfTimeSheet"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TimeSheetTest -->
+      <class name="testCases.BulkTimeEntryTest">
+        <methods>
+          <include name="validationCheckOfBulkTimeEntry"/>
+          <include name="CheckFunctionalityOfResetBulkTimeEntryButtton"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="setUp"/>
+          <include name="CheckFunctionalityOfDeleteBulkTimeEntryButtton"/>
+          <include name="validationCheckOfAddMultipleBulkTimeEntryButtton"/>
+          <include name="addBulkTimeEntry"/>
+        </methods>
+      </class> <!-- testCases.BulkTimeEntryTest -->
+      <class name="testCases.TimeTrackForFlagTrackEntryTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="setUp"/>
+          <include name="startTimeTrack"/>
+        </methods>
+      </class> <!-- testCases.TimeTrackForFlagTrackEntryTest -->
+      <class name="testCases.ProjectListingTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="addProjectWithDefaultTemplate"/>
+          <include name="deleteProjectFromList"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.ProjectListingTest -->
+      <class name="testCases.TimeReportTest">
+        <methods>
+          <include name="ValidationOfUserReportWithusername"/>
+          <include name="ValidationOfentryWiseReportwithProjectName"/>
+          <include name="ValidationOfClientReportWithProjectName"/>
+          <include name="ValidationOfUserWiseReportWithProjectName"/>
+          <include name="ValidationCheck"/>
+          <include name="ValidationOfTrackEnrtyDetailsReportWithDepartmentname"/>
+          <include name="ValidationOfProjectDetailsReportWithUsername"/>
+          <include name="close"/>
+          <include name="ValidationOfentryWiseReportwithDepartmentName"/>
+          <include name="ValidationOfClientReportWithDepartmentName"/>
+          <include name="ValidationOfProjectReportWithUsername"/>
+          <include name="setUp"/>
+          <include name="ValidationOfUserReportWithDepartmentname"/>
+          <include name="ValidationOfHalfYearlyProjectReportwithDepartmentName"/>
+          <include name="ValidationOfProjectReportWithPriojectname"/>
+          <include name="closeBrowser"/>
+          <include name="ValidationOfClientReportWithUserName"/>
+          <include name="ValidationOfprofitabilityProjectReportwithProjectName"/>
+          <include name="ValidationOfOneWeekProjectReportWithUserName"/>
+          <include name="ValidationOfOneWeekProjectReportWithDepartmentName"/>
+          <include name="ValidationOfTrackEnrtyDetailsReportWithUserName"/>
+          <include name="ValidationOneMonthProjectReportWithUserName"/>
+          <include name="ValidationOfProjectReportWithDepartnamename"/>
+          <include name="ValidationOfUserReportWithProjectname"/>
+          <include name="ValidationOfProjectDetailsReportWithDepartmentname"/>
+          <include name="ValidationOfTimeSheetReportWithUsername"/>
+          <include name="ValidationOfUserWiseReportWithUserName"/>
+          <include name="ValidationOfProjectwiseReportWithTeamMemeber"/>
+          <include name="beforeMethod"/>
+          <include name="ValidationOfUserWiseReportWithDepartmentName"/>
+          <include name="reportWrapUp"/>
+          <include name="ValidationOfHalfYearlyProjectReportwithUserName"/>
+          <include name="ValidationOfProjectDetailsReportWithProjectname"/>
+          <include name="ValidationOneMonthProjectReportWithProjectName"/>
+          <include name="ValidationOfHalfYearlyProjectReportwithProjectName"/>
+          <include name="ValidationOfTimeSheetReportWithProjectname"/>
+          <include name="ValidationOfprofitabilityProjectReportwithchannelName"/>
+          <include name="ValidationOfProjectwiseReportWithProjectName"/>
+          <include name="ValidationOfentryWiseReportwithUsername"/>
+          <include name="ValidationOfOneWeekProjectReportWithProjectName"/>
+          <include name="ValidationOfTrackEnrtyDetailsReportWithProjectName"/>
+          <include name="ValidationOneMonthProjectReportWithDepartmentName"/>
+        </methods>
+      </class> <!-- testCases.TimeReportTest -->
+      <class name="testCases.AuditRuleTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="validationCheck"/>
+          <include name="validationCheckOfAuditRuleName"/>
+          <include name="validationCheckOfAuditRemove"/>
+          <include name="validationCheckOfAuditUpdate"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="addNewAuditRuleWithEqualTimeTrackingHour"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.AuditRuleTest -->
+      <class name="testCases.TimeTrackTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="validatetimeEntryThroughFilter"/>
+          <include name="startTimeTrack"/>
+          <include name="VerifyTimeTrackactivity"/>
+          <include name="validateAddTimeEntryManually"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="VerifyclanderViewFunctionality"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TimeTrackTest -->
+      <class name="testCases.WorkDairyTest">
+        <methods>
+          <include name="validationCheckOfWorkDairy"/>
+          <include name="validationOfScreenShot"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.WorkDairyTest -->
+      <class name="testCases.TimeApprovalTest">
+        <methods>
+          <include name="ValidateTimeSheetApproveFunctionality"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="ValidateTimeSheetRejectionFunctionality"/>
+          <include name="ValidationCheck"/>
+          <include name="reportWrapUp"/>
+          <include name="close"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TimeApprovalTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
