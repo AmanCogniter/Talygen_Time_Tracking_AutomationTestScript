@@ -47,12 +47,14 @@ public class TimeSheetTest extends WebTestBase {
 		timeTrackAction.verifyActivityInListingArea();
 		new LoginAction(driver).logoutLogin();
 		timeSheetAction.GoToTimesheetPage();
-		timeSheetAction.checkFunctionalityOfTimesheet();
+		timeSheetAction.checkFunctionalityOfTimesheetForTimeSheet();
 	}
 	@Test(priority=3)
 	public void validateSendForApproval() throws AWTException {
 		test=getTest(Screenname + ": Validate functionality of Send For Approval");
 		TimeSheetAction timeSheetAction = new TimeSheetAction(driver);
+		
+		
 		
 		/*
 		 * new LoginAction(driver).logoutLogin(); ProjectListingAction
@@ -64,6 +66,8 @@ public class TimeSheetTest extends WebTestBase {
 		 * projectListingAction.enterProjectDescription();
 		 * projectListingAction.clickNextButton();
 		 */
+		 
+		 
 		new LoginAction(driver).logoutLogin();
 		TimeTrackAction timeTrackAction = new TimeTrackAction(driver);
 		timeTrackAction.GoToTimeTrackPage();
@@ -71,7 +75,7 @@ public class TimeSheetTest extends WebTestBase {
 		timeTrackAction.verifyActivityInListingArea();
 		new LoginAction(driver).logoutLogin();
 		timeSheetAction.GoToTimesheetPage();
-		timeSheetAction.clickOnSendForApproval();
+		timeSheetAction.clickOnSendForApprovalforTimeSheet();
 	}
 	
 }

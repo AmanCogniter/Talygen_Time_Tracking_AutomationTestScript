@@ -31,7 +31,7 @@ public class TimeSheetAction {
 	}
 	public void checkFunctionalityOfTimesheet() throws AWTException
 	{
-		//timeSheetPage.enterUser();
+		timeSheetPage.enterUser();
 		timeSheetPage.clickOnShowTimeSheet();
 		//timeSheetPage.clickOnBreak();
 		timeSheetPage.clickOnAddHours();
@@ -50,10 +50,30 @@ public class TimeSheetAction {
 		
 
 }
+	public void checkFunctionalityOfTimesheetForTimeSheet() throws AWTException
+	{
+		timeSheetPage.enterUserForTimeSheet();
+		timeSheetPage.clickOnShowTimeSheet();
+		//timeSheetPage.clickOnBreak();
+		timeSheetPage.clickOnAddHours();
+		timeSheetPage.clickOnselectProject();
+		//timeSheetPage.selectyourTask();
+		//timeSheetPage.enterdescription();
+		timeSheetPage.enterTotaltime();
+		timeSheetPage.enterdescription();
+		//timeSheetPage.enterStarttime();
+		//timeSheetPage.enterStoptime();
+		timeSheetPage.clickOnSave();
+		timeSheetPage.validateTimeEntryConfirmationMessage();
+		//timeSheetPage.clickOnBreak();
+		timeSheetPage.deleteWorkingHours();
+		timeSheetPage.validateDeleteConfirmationMessage();
+		
+
+}
 	public void clickOnSendForApproval() throws AWTException {
 		timeSheetPage.enterUser();
 		timeSheetPage.clickOnShowTimeSheet();
-		//clickOnShowTimeSheet();
 		//timeSheetPage.clickOnBreak();
 		timeSheetPage.clickOnAddHours();
 		timeSheetPage.clickOnselectProject();
@@ -66,6 +86,29 @@ public class TimeSheetAction {
 		timeSheetPage.clickOnSave();
 		timeSheetPage.validateTimeEntryConfirmationMessage();
 		timeSheetPage.clickOnSendForApproval();
+		timeSheetPage.validateSendApprovalConfirmationPopup();
+		/*
+		 * timeSheetPage.enterPostCommentTitle();
+		 * timeSheetPage.enterPostCommentDescription();
+		 * timeSheetPage.clickOnPostNewComment();
+		 * timeSheetPage.validatePostCommentConfirmationmessage();
+		 */
+	}
+	public void clickOnSendForApprovalforTimeSheet() throws AWTException {
+		timeSheetPage.enterUserForTimeSheet();
+		timeSheetPage.clickOnShowTimeSheet();
+		//timeSheetPage.clickOnBreak();
+		timeSheetPage.clickOnAddHours();
+		timeSheetPage.clickOnselectProject();
+		//timeSheetPage.selectyourTask();
+		//timeSheetPage.enterdescription();
+		timeSheetPage.enterTotaltime();
+		timeSheetPage.enterdescription();
+		//timeSheetPage.enterStarttime();
+		//timeSheetPage.enterStoptime();
+		timeSheetPage.clickOnSave();
+		timeSheetPage.validateTimeEntryConfirmationMessage();
+		timeSheetPage.clickOnSendApprovalForTimeSheet();
 		timeSheetPage.validateSendApprovalConfirmationPopup();
 		/*
 		 * timeSheetPage.enterPostCommentTitle();

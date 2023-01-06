@@ -140,7 +140,9 @@ public class TimeTrackPage extends WebBasePage {
 	     public void selectyourTask() {
 	    	 staticWait(3000);
 	    	 click(By.xpath("//div[@type='button']/span"), "select Your task", 30);
-	    	 click(By.xpath("//a/span[@class='float-left textvalue']"), "Task", 30);
+	    	 staticWait(2000);
+	    	 //click(By.xpath("//a/span[@class='float-left textvalue']"), "Task", 30);
+	    	 click(By.xpath("//div/ul/li/ol[@class='scrollbar']"), "Task", 30);
 	     }
 	     public void clickOnTagPlusIcon(){
 	    	 staticWait(3000);
@@ -589,10 +591,10 @@ public class TimeTrackPage extends WebBasePage {
 	     public void enterStoptime() {
 	    	 staticWait(1000);
 	    	 Calendar cal = Calendar.getInstance();
-	         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+	         SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ssaa");
 	         String currentTime = sdf.format(cal.getTime());
 	         System.out.println( currentTime );
-	         enter(By.xpath("//div/input[@data-original-title='Stop Time']"), currentTime, "Start Time", 20);
+	         enter(By.xpath("//div/input[@data-original-title='Stop Time']"), currentTime, "Stop Time", 20);
 	         staticWait(1000);
 	         click(By.xpath("//div[@data-target='#txtStopTime']/span"), "Open Stop time popup", 30);
 	         staticWait(1000);
@@ -603,8 +605,19 @@ public class TimeTrackPage extends WebBasePage {
 	     public void clickOnSave() {
 	    	 staticWait(3000);
 	    	 click(By.xpath("//div/a[text()='Save']"), "save button ", 30);
-	    	 click(By.xpath("//div/button[@id='closenotifymessage']/span"), "closed notification popup ", 30);
-	    	 click(By.xpath("//div/a[text()='Save']"), "save button ", 30);
+	    	 try {
+	    		 WebElement overlappedentries = driver.findElement(By.xpath("//div/h5[text()='Overlapped entries']"));
+	    		 if (overlappedentries.isDisplayed()) {
+	    			 click(By.xpath("//div/h5[text()='Overlapped entries']/ancestor::div[@class='modal-content']/descendant::button[@data-original-title='Close']"), "Close Overlapped entries popup", 30);
+				} else {
+					click(By.xpath("//div/button[@id='closenotifymessage']/span"), "closed notification popup ", 30);
+				}
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+	    	 //click(By.xpath("//div/button[@id='closenotifymessage']/span"), "closed notification popup ", 30);
+	    	 //click(By.xpath("//div/a[text()='Save']"), "save button ", 30);
 	     }
 	     public void captureAletrMessage() {
 	    	staticWait(2000);

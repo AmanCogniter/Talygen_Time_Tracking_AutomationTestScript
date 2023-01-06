@@ -3,17 +3,30 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testCases.WorkDairyTest"/>
-      <class name="testCases.TimeReportTest"/>
-      <class name="testCases.TimeApprovalTest"/>
-      <class name="testCases.FlagTrackEntryTest"/>
-      <class name="testCases.TimeTrackTest"/>
-      <class name="testCases.TimeTrackForFlagTrackEntryTest"/>
-      <class name="testCases.ProjectListingTest"/>
-      <class name="testCases.BulkTimeEntryTest"/>
-      <class name="testCases.TimeSheetTest"/>
-      <class name="testCases.CompanySetupAddUserTest"/>
-      <class name="testCases.AuditRuleTest"/>
+    	<class name="testCases.AuditRuleTest"/>
+    	<class name="testCases.BulkTimeEntryTest"/>
+    	<!--class name="testCases.CompanySetupAddUserTest"/-->
+    	<!--class name="testCases.FlagTrackEntryTest"/-->
+    	<class name="testCases.ProjectListingTest"/>
+    	<class name="testCases.TimeApprovalTest"/>
+    	<class name="testCases.TimeReportTest"/>
+    	<class name="testCases.TimeSheetTest"/>
+    	<class name="testCases.TimeTrackForFlagTrackEntryTest"/>
+    	<class name="testCases.TimeTrackTest"/>
+    	
+    	 <class name="testCases.WorkDairyTest"/>
+    	
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -49,38 +49,36 @@ public class ProjectListingPage extends WebBasePage {
 
 	// click on full menu
 	public void clickFullMenu() {
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver,30);
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
-		 * xpath("//a/span[text()='Full Menu']")));
-		 */
 		
-		staticWait(3000);
-	try {
+		  WebDriverWait wait = new WebDriverWait(driver,30);
+		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.
+		  xpath("//a/span[text()='Full Menu']")));
+		  click(By.xpath("//a/span[text()='Full Menu']"), "Full Menu", 20);
 		
-		WebElement tourGuide = driver.findElement(By.xpath("(//*[name()='svg' and @class='guided-tour-icon'])[1]"));
-		
-		if(tourGuide.isDisplayed()) {
-			
-			Actions action = new Actions(driver);
-			action.moveToElement(tourGuide).
-			click().build().perform();
-			
-			  WebDriverWait wait1 = new WebDriverWait(driver,30);
-			  wait1.until(ExpectedConditions.elementToBeClickable(By.
-			  xpath("(//*[name()='svg' and @class='guided-tour-icon'])[1]")));
-			 
-			click(By.xpath("//a/span[text()='Full Menu']"), "Full Menu", 20);
-			
-		}
-		
-		
-		
-	} catch (Exception e) {
-		// TODO: handle exception
-		click(By.xpath("//span[text()='Full Menu']"), "Full Menu", 20);
-	}
-		
+			/*
+			 * staticWait(3000); try {
+			 * 
+			 * WebElement tourGuide = driver.findElement(By.
+			 * xpath("(//*[name()='svg' and @class='guided-tour-icon'])[1]"));
+			 * 
+			 * if(tourGuide.isDisplayed()) {
+			 * 
+			 * Actions action = new Actions(driver); action.moveToElement(tourGuide).
+			 * click().build().perform();
+			 * 
+			 * WebDriverWait wait1 = new WebDriverWait(driver,30);
+			 * wait1.until(ExpectedConditions.elementToBeClickable(By.
+			 * xpath("(//*[name()='svg' and @class='guided-tour-icon'])[1]")));
+			 * 
+			 * click(By.xpath("//a/span[text()='Full Menu']"), "Full Menu", 20);
+			 * 
+			 * }
+			 * 
+			 * 
+			 * 
+			 * } catch (Exception e) { // TODO: handle exception
+			 * click(By.xpath("//span[text()='Full Menu']"), "Full Menu", 20); }
+			 */
 		
 			 
 	}
@@ -125,7 +123,7 @@ public class ProjectListingPage extends WebBasePage {
 
 	// enter project name
 	public void enterProjectName() {
-		projectName = prop.getProperty("enterProjectName") + datevalue;
+		projectName = prop.getProperty("enterProjectName") + getCurrentDate;
 		enter(By.xpath("//input[@name='project_name']"), projectName, "enterProject Name", 20);
 	}
 
@@ -139,7 +137,7 @@ public class ProjectListingPage extends WebBasePage {
 
 	// enter Channel name
 	public void enterChannelName() {
-		 channelName = prop.getProperty("enterChannelName") + randomNumber;
+		 channelName = prop.getProperty("enterChannelName") + getCurrentDate;
 		enter(By.cssSelector("#ChannelName"), channelName, "Enter Channel name",
 				20);
 	}
@@ -152,12 +150,31 @@ public class ProjectListingPage extends WebBasePage {
 
 	// click Save button
 	public void SaveButton() {
-
+		staticWait(2000);
 		click(By.xpath("//a[@class='btn btn-success formbtn mr-2']"), "Save button", 20);
+		try {
+			
+			WebElement channelnameexist = driver.findElement(By.xpath("//div/span[text()='Channel Name already exists']"));
+			if (channelnameexist.isDisplayed()) {
+				staticWait(2000);
+				click(By.xpath("//button[@id='closenotifymessage']"), "Close notify message popup", 20);
+				staticWait(1000);
+				click(By.xpath("//div/a[@class='btn btn-danger formbtn']"), "Cancel button", 20);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			staticWait(2000);
+			//click(By.xpath("//a[@class='btn btn-success formbtn mr-2']"), "Save button", 20);
+			selectChannel();
+		}
+
+		
 	}
 	public void selectChannel() {
 		staticWait(7000);
 		click(By.xpath("//form//div/select[@name='channel_id']"), "Channel", 20);
+		staticWait(2000);
 		selectValueWithText(By.xpath("//div/select[@name='channel_id']"), channelName, channelName, 30);
 	}
 
@@ -254,13 +271,20 @@ public class ProjectListingPage extends WebBasePage {
 
 	// click Save
 	public void clickSave() {
+		staticWait(2000);
 		click(By.xpath("//div[@class='search-btm-btn']//a[@data-original-title='Save']"), "click Save", 20);
+		
 	}
 
 	// click Automation project
 	public void clickAutomationProject() {
+		staticWait(3000);
+		click(By.xpath("//div/h5/a/span[text()='Project Name']"), "Project Name Text field", 20);
+		enter(By.xpath("//div/input[@placeholder='Search by Project Name']"), projectName, "Project Name", 30);
+		click(By.xpath("//span[@data-original-title='Search']"), "Search Button", 20);
+		staticWait(3000);
 		clickByJavascript(
-				By.xpath("//table[@id='ProjectListing']//tbody//tr[1]//span[@title='" + projectName + "']//a"),
+				By.xpath("//table[@id='ProjectListing']//tbody//tr//span[@title='" + projectName + "']//a"),
 				"click Automation project", 20);
 	}
 	public void clickOnTask() {
@@ -272,7 +296,7 @@ public class ProjectListingPage extends WebBasePage {
 				"Add Task", 20);
 	}
 	public void enterTaskName() {
-		taskName = prop.getProperty("taskName") + randomNumber;
+		taskName = prop.getProperty("taskName") + getCurrentDate;
 		enter(By.xpath("//table/tbody/tr/td[@class='relate-input overflow-visible']/input[@type='text']"), taskName, "Task Name", 30);
 	}
 	public void enterTaskHour() {
@@ -316,6 +340,7 @@ public class ProjectListingPage extends WebBasePage {
 		//driver.findElement(By.xpath("(//td/input[@class='form-control text'])[2]")).clear();
 		clear(By.xpath("(//td/input[@class='form-control text'])[2]"), "Hour", 20);
 		String addHours = prop.getProperty("memeberHours");
+		staticWait(1000);
 		enter(By.xpath("(//td/input[@class='form-control text'])[2]"), addHours, "Add Task Hour", 30);
 	}
 	public void clickOnAdd() {

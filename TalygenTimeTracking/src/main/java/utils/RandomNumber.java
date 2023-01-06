@@ -13,7 +13,7 @@ public class RandomNumber {
 	 */
 	public int getRandomNumber() {
 		Random random=new Random();
-		int randomNumber = random.nextInt(10000);
+		int randomNumber = random.nextInt(20000);
 		return randomNumber;
 	}
 

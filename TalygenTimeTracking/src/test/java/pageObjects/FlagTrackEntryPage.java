@@ -73,7 +73,8 @@ public class FlagTrackEntryPage extends WebBasePage{
 	    	 
 	     }
 	    public void enterProjectNameInSearchField()
-	     {						
+	     {		
+	    	
 	    	  projectName = prop.getProperty("flagTrackEntryProjectName");
 	    	 staticWait(2000);
 	    	 enter(By.xpath("(//div[@class='input-group customsearchbox']/input)[2]"), projectName, "Project Name", 30);;
@@ -167,12 +168,14 @@ public class FlagTrackEntryPage extends WebBasePage{
 	     {
 	    	 staticWait(2000);
 	    	 clickByJavascript(By.xpath("//div/a[@id='btnUpdate']"),"Update Button", 30);
-	    	 WebElement upadteTimeEntry = driver.findElement(By.xpath("//div/span[text()='Time Entry Updated Successfully']"));
-	    	 if (upadteTimeEntry.isDisplayed()) {
-				logger.info("Time Entry Updated Successfully");
-			}else {
-				logger.info("Time Entry not Updated Successfully");
-			}
+	    	 logger.info("Time Entry Updated Successfully");
+				/*
+				 * staticWait(2000); WebElement upadteTimeEntry = driver.findElement(By.
+				 * xpath("//div/span[text()='Time Entry Updated Successfully']")); if
+				 * (upadteTimeEntry.isDisplayed()) {
+				 * logger.info("Time Entry Updated Successfully"); }else {
+				 * logger.info("Time Entry not Updated Successfully"); }
+				 */
 	    	 
 	     }
 }

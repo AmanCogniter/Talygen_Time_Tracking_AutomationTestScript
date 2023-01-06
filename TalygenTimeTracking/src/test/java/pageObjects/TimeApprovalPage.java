@@ -75,7 +75,7 @@ public class TimeApprovalPage extends WebBasePage {
 	    	 
 	     }
 	     public void clickOncheckBox() {
-	    	 staticWait(3000);
+	    	 staticWait(5000);
 	    	 //waitForVisibilityOfElement(By.xpath("//tbody/tr/td[@class='td1 text-center']/div[@class='custom-control custom-checkbox']"), 50);
 	    	 click(By.xpath("//tbody/tr/td[@class='td1 text-center']/div[@class='custom-control custom-checkbox']")," Check Box", 30);
 
@@ -92,12 +92,12 @@ public class TimeApprovalPage extends WebBasePage {
 	     }
 	     public void enterCommentDescription() {
 	    	 waitForVisibilityOfElement(By.xpath("//div/textarea[@id='CommentDescription']"), 50);
-	         enter(By.xpath("//div/textarea[@id='CommentDescription']"), prop.getProperty("Description"), "Comment title", 20);
+	         enter(By.xpath("//div/textarea[@id='CommentDescription']"), prop.getProperty("Description"), "Comment description", 20);
 
 	     }
 	     public void clickOnPostNewComment() {
-	    	 waitForVisibilityOfElement(By.xpath("//div[@class='search-btm-btn']/a[@id='aPostComment']/span"), 50);
-	    	 click(By.xpath("//div[@class='search-btm-btn']/a[@id='aPostComment']/span"), "Post new comment button", 30);
+	    	 waitForVisibilityOfElement(By.xpath("//div/a[@id='aPostComment']"), 50);
+	    	 click(By.xpath("//div/a[@id='aPostComment']"), "Post new comment button", 30);
 	    	 staticWait(1000);
 	    	 click(By.xpath("//button[@title='OK']")," confirmation button", 30);
 

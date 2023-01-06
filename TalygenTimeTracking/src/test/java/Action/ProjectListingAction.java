@@ -41,7 +41,7 @@ public class ProjectListingAction extends WebBasePage {
 		projectListingPage.enterChannelName();
 		projectListingPage.enterChannelDescription();
 		projectListingPage.SaveButton();
-		projectListingPage.selectChannel();
+		//projectListingPage.selectChannel();
 	}
 
 	// Select priority

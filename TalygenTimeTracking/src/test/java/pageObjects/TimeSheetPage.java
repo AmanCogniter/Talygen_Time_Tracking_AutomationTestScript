@@ -66,14 +66,25 @@ WebDriver driver ;
 	     public void clickOnShowTimeSheet()
 	     {
 	    	 staticWait(5000);
+	    	 //waitForVisibilityOfElement(By.xpath("//div/a[@id='aTimesheet']"), 50);
 	    	 click(By.xpath("//div/a[@id='aTimesheet']")," Show time sheet", 30);
 	    	 
 	     }
 	     public void enterUser()
 	     {
-	    	 staticWait(3000);
+	    	 staticWait(5000);
 	    	 click(By.xpath("//div/select[@id='ddlUser']")," User name", 30);
-	    	 selectValueWithText(By.xpath("//div/select[@id='ddlUser']"), "Henry miller", " User name", 20);
+	    	 staticWait(2000);
+	    	 selectValueWithText(By.xpath("//div/select[@id='ddlUser']"), "Randell Osterman", " User name", 20);
+	    	 //enter(By.xpath("//div/select[@id='ddlUser']"), "Henry miller", " User name", 20);
+	    	 
+	     }
+	     public void enterUserForTimeSheet()
+	     {
+	    	 staticWait(5000);
+	    	 click(By.xpath("//div/select[@id='ddlUser']")," User name", 30);
+	    	 staticWait(2000);
+	    	 selectValueWithText(By.xpath("//div/select[@id='ddlUser']"), "David Bush", " User name", 20);
 	    	 //enter(By.xpath("//div/select[@id='ddlUser']"), "Henry miller", " User name", 20);
 	    	 
 	     }
@@ -96,8 +107,8 @@ WebDriver driver ;
 	     public void selectyourTask() {
 	    	 staticWait(2000);
 	    	 click(By.xpath("//div[@type='button']/span"), "select Your task", 30);
-	    	 staticWait(2000);
-	    	 click(By.xpath("//a/span[@class='float-left textvalue']"), "Task", 30);
+	    	 staticWait(5000);
+	    	 click(By.xpath("//div/ul/li/ol/li/a/span[@class='float-left textvalue']"), "Task", 30);
 	     }
 	     public void enterdescription() {
 	    	 staticWait(1000);
@@ -119,14 +130,14 @@ WebDriver driver ;
 		     robot.keyRelease(KeyEvent.VK_CONTROL);
 		     staticWait(1000);
 		     robot.keyRelease(KeyEvent.VK_A);
-		     staticWait(1000);
+		     staticWait(2000);
 		     robot.keyPress(KeyEvent.VK_BACK_SPACE);
 		     staticWait(1000);
 		     robot.keyRelease(KeyEvent.VK_BACK_SPACE);
 		     logger.info("Total time text field cleared");
 		     //staticWait(2000);
 		     //driver.findElement(By.xpath("//div[@class='form-group']/input[@id='txtTotalHour']")).clear();
-				  staticWait(1000);
+				  staticWait(2000);
 				 
 	    	 enter(By.xpath("//div[@class='form-group']/input[@id='txtTotalHour']"), "12", "Total time", 30); 
 	     }
@@ -174,10 +185,10 @@ WebDriver driver ;
 	     public void deleteWorkingHours() {
 	    	 staticWait(2000);
 	    	 click(By.xpath("//tbody/tr[@id='tbl-1']/td[@class='tabchild']/a")," Expand button", 30);
-	    	 staticWait(1000);
+	    	 staticWait(3000);
 	    	 clickByJavascript(By.xpath("//td/a[@class='aDelete']"), "Delete button", 30);
-	    	 staticWait(1000);
-	    	 click(By.xpath("//button[@title='OK']")," confirmation button", 30);
+	    	 staticWait(3000);
+	    	  click(By.xpath("//button[@title='OK']")," confirmation button", 30);
 	     }
 	     public void validateDeleteConfirmationMessage() {
 	    	 try {
@@ -196,7 +207,13 @@ WebDriver driver ;
 	     public void clickOnSendForApproval() {
 	    	 staticWait(3000);
 	    	 click(By.xpath("//div/a[@id='btnSendForApproval']")," Send For Approval button", 30);
-	    	 staticWait(1000);
+	    	 staticWait(2000);
+	    	 click(By.xpath("//button[@title='OK']")," confirmation button", 30);
+	     }
+	     public void clickOnSendApprovalForTimeSheet() {
+	    	 staticWait(3000);
+	    	 click(By.xpath("//div/a[@id='btnSendForApproval']")," Send For Approval button", 30);
+	    	 staticWait(2000);
 	    	 click(By.xpath("//button[@title='OK']")," confirmation button", 30);
 	     }
 	     public void validateSendApprovalConfirmationPopup() {

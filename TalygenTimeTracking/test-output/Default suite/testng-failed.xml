@@ -3,20 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TimeTrackTest">
+      <class name="testCases.TimeApprovalTest">
         <methods>
           <include name="closeBrowser"/>
           <include name="beforeMethod"/>
-          <include name="validatetimeEntryThroughFilter"/>
-          <include name="startTimeTrack"/>
-          <include name="VerifyTimeTrackactivity"/>
-          <include name="validateAddTimeEntryManually"/>
+          <include name="ValidateTimeSheetRejectionFunctionality"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
-          <include name="VerifyclanderViewFunctionality"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testCases.TimeTrackTest -->
+      </class> <!-- testCases.TimeApprovalTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

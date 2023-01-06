@@ -26,7 +26,7 @@ public class AuditRuleTest extends WebTestBase {
 		@Test(priority=2)
 		public void addNewAuditRuleWithEqualTimeTrackingHour()
 		{
-			test=getTest(Screenname  + ": Add new audit rule");
+			test=getTest(Screenname  + ": Add New Audit Rule With Equal Time Tracking Hour");
 			new LoginAction(driver).logoutLogin();
 			
 			CompanySetupUserAction companySetupUserAction = new CompanySetupUserAction(driver);
@@ -43,7 +43,7 @@ public class AuditRuleTest extends WebTestBase {
 		@Test(priority=3)
 		public void validationCheckOfAuditRuleName()
 		{
-			test=getTest(Screenname + ": Validation message on Add New audit rule");
+			test=getTest(Screenname + ": Validation Check Of Audit Rule Name");
 			AuditRuleAction auditRuleAction = new AuditRuleAction(driver);
 			new LoginAction(driver).logoutLogin();
 			auditRuleAction.goToAuditRuleTab();
@@ -52,7 +52,7 @@ public class AuditRuleTest extends WebTestBase {
 		@Test(priority=5)
 		public void validationCheckOfAuditRemove()
 		{
-			test=getTest(Screenname + ": Validation message on Add New audit rule");
+			test=getTest(Screenname + ": Validation Check Of Audit Remove");
 			AuditRuleAction auditRuleAction = new AuditRuleAction(driver);
 			new LoginAction(driver).logoutLogin();
 			auditRuleAction.goToAuditRuleTab();
@@ -61,7 +61,7 @@ public class AuditRuleTest extends WebTestBase {
 		@Test(priority=4)
 		public void validationCheckOfAuditUpdate()
 		{
-			test=getTest(Screenname + ": Validation message on Add New audit rule");
+			test=getTest(Screenname + ": Validation Check Of Audit Update ");
 			AuditRuleAction auditRuleAction = new AuditRuleAction(driver);
 			new LoginAction(driver).logoutLogin();
 			auditRuleAction.goToAuditRuleTab();

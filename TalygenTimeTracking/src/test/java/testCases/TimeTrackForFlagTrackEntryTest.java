@@ -20,7 +20,7 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 	/*
 	 * Validate the Time Track Page and mandatory fields
 	 */
-	//@Test(priority=1,enabled=true)
+	@Test(priority=1,enabled=true)
 	public void ValidationCheck()
 	{
 		test=getTest(Screenname + ": Validation message on Time Track");
@@ -49,7 +49,7 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 		timeTrackAction.startTimeTrackForFlagTrackEntry();
 		
 	}
-	//@Test(priority=3)
+	@Test(priority=3)
 	public void VerifyTimeTrackactivity() {
 		test=getTest(Screenname + ": Verify time track activity");
 		TimeTrackAction timeTrackAction = new TimeTrackAction(driver);
@@ -58,7 +58,7 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 		timeTrackAction.verifyActivityInListingArea();
 		
 	}
-	//@Test(priority=4)
+	@Test(priority=4)
 	public void VerifyclanderViewFunctionality() {
 		test=getTest(Screenname + ": Verify clander View Functionality ");
 		TimeTrackAction timeTrackAction = new TimeTrackAction(driver);
@@ -90,7 +90,7 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 		projectListingAction.deleteProjectformList();
 	}
 	
-	//@Test(priority=5)
+	@Test(priority=5)
 	public void validatetimeEntryThroughFilter() {
 		test=getTest(Screenname + ": Validate Time Entry Through Filter ");
 		TimeTrackAction timeTrackAction = new TimeTrackAction(driver);
@@ -98,10 +98,12 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 		timeTrackAction.GoToTimeTrackPage();
 		timeTrackAction.verifyFilter();
 	}
-	//@Test(priority=6)
+	@Test(priority=6)
 	public void validateAddTimeEntryManually() {
 		test=getTest(Screenname + ": Validate Add Time Entry Manually ");
 		TimeTrackAction timeTrackAction = new TimeTrackAction(driver);
+		
+		
 		
 		/*
 		 * new LoginAction(driver).logoutLogin(); ProjectListingAction
@@ -113,6 +115,7 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 		 * projectListingAction.enterProjectDescription();
 		 * projectListingAction.clickNextButton();
 		 */
+		 
 		 
 		new LoginAction(driver).logoutLogin();
 		timeTrackAction.GoToTimeTrackPage();

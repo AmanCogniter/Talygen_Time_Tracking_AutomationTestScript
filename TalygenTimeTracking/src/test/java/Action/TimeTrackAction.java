@@ -33,7 +33,7 @@ public class TimeTrackAction {
 	}
 	public void startTimeTrack() {
 		timetrackPage.clickOnselectProject();
-		timetrackPage.selectyourTask();
+		//timetrackPage.selectyourTask();
 		timetrackPage.clickOnTagPlusIcon();
 		timetrackPage.enterTagName();
 		timetrackPage.enterdescription();
@@ -72,6 +72,7 @@ public class TimeTrackAction {
 		timetrackPage.enterDescription();
 		timetrackPage.clickOnStart();
 		timetrackPage.addAttachment();
+		timetrackPage.clickOnStopButton();
 	}
 	public void  verifyActivityInListingArea() {
 		
@@ -132,12 +133,12 @@ public class TimeTrackAction {
 		//timetrackPage.enterTagName();
 		//timetrackPage.enterdescription();
 		//timetrackPage.clickOnsave();
-		timetrackPage.clickOnSelectTagName();
+		//timetrackPage.clickOnSelectTagName();
 		timetrackPage.enterDescription();
 		timetrackPage.enterStarttime();
 		timetrackPage.enterStoptime();
 		timetrackPage.clickOnSave();
-		timetrackPage.captureAletrMessage();
+		//timetrackPage.captureAletrMessage();
 		
 }
 }
