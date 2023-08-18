@@ -81,7 +81,7 @@ public class TimeTrackTest extends WebTestBase {
 
 	}
 
-	// @Test(priority=7)
+	 @Test(priority=7)
 	public void updateAnddeleteTimeEntry() {
 		test = getTest(Screenname + ": Update and verify delete entry");
 		TimeTrackAction timeTrackAction = new TimeTrackAction(driver);

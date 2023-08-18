@@ -4,8 +4,6 @@ import static reporting.ComplexReportFactory.getTest;
 
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentTest;
-
 import Action.BulkTimeEntryAction;
 import Action.LoginAction;
 import Action.ProjectListingAction;

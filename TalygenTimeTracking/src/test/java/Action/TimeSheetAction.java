@@ -85,7 +85,7 @@ public class TimeSheetAction {
 		//timeSheetPage.enterStoptime();
 		timeSheetPage.clickOnSave();
 		timeSheetPage.validateTimeEntryConfirmationMessage();
-		timeSheetPage.clickOnSendForApproval();
+		timeSheetPage.clickOnSendApprovalForTimeSheet();
 		timeSheetPage.validateSendApprovalConfirmationPopup();
 		/*
 		 * timeSheetPage.enterPostCommentTitle();

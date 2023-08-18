@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>63/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>53/11/5</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 09 11:02:26 IST 2022</td>
+<td>Started on:</td><td>Thu Aug 17 23:48:49 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>9903 seconds (9903458 ms)</td>
+<tr><td>Total time:</td><td>13719 seconds (13719998 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,6 +68,446 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testCases.BulkTimeEntryTest<br>Parameters: [TestResult name={null} status=CREATED method=BulkTimeEntryTest.CheckFunctionalityOfResetBulkTimeEntryButtton()[pri:5, instance:testCases.BulkTimeEntryTest@6e171cd7] output={null}], public void testCases.BulkTimeEntryTest.CheckFunctionalityOfResetBulkTimeEntryButtton()</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace319880368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace319880368'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.setUp()'><b>setUp</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1543105131", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1543105131'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>93</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testCases.BulkTimeEntryTest<br>Parameters: [TestResult name={null} status=CREATED method=BulkTimeEntryTest.validationCheckOfAddMultipleBulkTimeEntryButtton()[pri:3, instance:testCases.BulkTimeEntryTest@6e171cd7] output={null}], public void testCases.BulkTimeEntryTest.validationCheckOfAddMultipleBulkTimeEntryButtton()</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1248908034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1248908034'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testCases.BulkTimeEntryTest<br>Parameters: [TestResult name={null} status=CREATED method=BulkTimeEntryTest.CheckFunctionalityOfDeleteBulkTimeEntryButtton()[pri:4, instance:testCases.BulkTimeEntryTest@6e171cd7] output={null}], public void testCases.BulkTimeEntryTest.CheckFunctionalityOfDeleteBulkTimeEntryButtton()</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366180667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace366180667'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testCases.BulkTimeEntryTest<br>Parameters: [TestResult name={null} status=CREATED method=BulkTimeEntryTest.validationCheckOfBulkTimeEntry()[pri:1, instance:testCases.BulkTimeEntryTest@6e171cd7] output={null}], public void testCases.BulkTimeEntryTest.validationCheckOfBulkTimeEntry()</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075314220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075314220'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testCases.BulkTimeEntryTest<br>Parameters: [TestResult name={null} status=CREATED method=BulkTimeEntryTest.addBulkTimeEntry()[pri:2, instance:testCases.BulkTimeEntryTest@6e171cd7] output={null}], public void testCases.BulkTimeEntryTest.addBulkTimeEntry()</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace37878764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace37878764'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.closeBrowser()'><b>closeBrowser</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.closeBrowser(WebTestBase.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace897087270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace897087270'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at utils.WebTestBase.closeBrowser(WebTestBase.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td></td>
+<td>-1692296978</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td></td>
+<td>-1692296979</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td></td>
+<td>-1692296979</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td></td>
+<td>-1692296979</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td></td>
+<td>-1692296979</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -75,20 +515,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.BulkTimeEntryTest.addBulkTimeEntry()'><b>addBulkTimeEntry</b><br>Test class: testCases.BulkTimeEntryTest</td>
-<td><div><pre>java.lang.AssertionError: Save button -  element not present
-	at utils.WebBasePage.click(WebBasePage.java:128)
-	at pageObjects.ProjectListingPage.SaveButton(ProjectListingPage.java:165)
-	at Action.ProjectListingAction.addChannel(ProjectListingAction.java:43)
-	at testCases.BulkTimeEntryTest.addBulkTimeEntry(BulkTimeEntryTest.java:40)
+<td title='testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithUserName()'><b>ValidationOfTrackEnrtyDetailsReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
+<td><div><pre>java.lang.AssertionError: Close user Dropdown -  element not clickable
+	at utils.WebBasePage.click(WebBasePage.java:121)
+	at pageObjects.TimeReportPage.clickOnUser(TimeReportPage.java:86)
+	at Action.TimeReportAction.checkTrackEntryDetailsReportWithUsername(TimeReportAction.java:237)
+	at testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithUserName(TimeReportTest.java:397)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1501624947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1501624947'><pre>java.lang.AssertionError: Save button -  element not present
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1370154522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1370154522'><pre>java.lang.AssertionError: Close user Dropdown -  element not clickable
 	at org.testng.Assert.fail(Assert.java:99)
-	at utils.WebBasePage.click(WebBasePage.java:128)
-	at pageObjects.ProjectListingPage.SaveButton(ProjectListingPage.java:165)
-	at Action.ProjectListingAction.addChannel(ProjectListingAction.java:43)
-	at testCases.BulkTimeEntryTest.addBulkTimeEntry(BulkTimeEntryTest.java:40)
+	at utils.WebBasePage.click(WebBasePage.java:121)
+	at pageObjects.TimeReportPage.clickOnUser(TimeReportPage.java:86)
+	at Action.TimeReportAction.checkTrackEntryDetailsReportWithUsername(TimeReportAction.java:237)
+	at testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithUserName(TimeReportTest.java:397)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,23 +558,23 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>79</td>
-<td>testCases.BulkTimeEntryTest@59fd97a8</td></tr>
+<td>209</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
 <tr>
-<td title='testCases.TimeApprovalTest.ValidateTimeSheetRejectionFunctionality()'><b>ValidateTimeSheetRejectionFunctionality</b><br>Test class: testCases.TimeApprovalTest</td>
-<td><div><pre>java.lang.AssertionError:  Show time sheet -  element not clickable
-	at utils.WebBasePage.click(WebBasePage.java:121)
-	at pageObjects.TimeSheetPage.clickOnShowTimeSheet(TimeSheetPage.java:70)
-	at Action.TimeSheetAction.clickOnShowTimeSheet(TimeSheetAction.java:130)
-	at testCases.TimeApprovalTest.ValidateTimeSheetRejectionFunctionality(TimeApprovalTest.java:59)
+<td title='testCases.TimeSheetTest.validateSendForApproval()'><b>validateSendForApproval</b><br>Test class: testCases.TimeSheetTest</td>
+<td><div><pre>java.lang.AssertionError: Add Hours  -  element not present
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.clickOnSendForApprovalforTimeSheet(TimeSheetAction.java:101)
+	at testCases.TimeSheetTest.validateSendForApproval(TimeSheetTest.java:78)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2026446122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2026446122'><pre>java.lang.AssertionError:  Show time sheet -  element not clickable
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311592722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311592722'><pre>java.lang.AssertionError: Add Hours  -  element not present
 	at org.testng.Assert.fail(Assert.java:99)
-	at utils.WebBasePage.click(WebBasePage.java:121)
-	at pageObjects.TimeSheetPage.clickOnShowTimeSheet(TimeSheetPage.java:70)
-	at Action.TimeSheetAction.clickOnShowTimeSheet(TimeSheetAction.java:130)
-	at testCases.TimeApprovalTest.ValidateTimeSheetRejectionFunctionality(TimeApprovalTest.java:59)
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.clickOnSendForApprovalforTimeSheet(TimeSheetAction.java:101)
+	at testCases.TimeSheetTest.validateSendForApproval(TimeSheetTest.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,23 +604,25 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>411</td>
-<td>testCases.TimeApprovalTest@123ef382</td></tr>
+<td>420</td>
+<td>testCases.TimeSheetTest@59fd97a8</td></tr>
 <tr>
-<td title='testCases.TimeApprovalTest.ValidateTimeSheetApproveFunctionality()'><b>ValidateTimeSheetApproveFunctionality</b><br>Test class: testCases.TimeApprovalTest</td>
-<td><div><pre>java.lang.AssertionError:  Show time sheet -  element not clickable
+<td title='testCases.TimeTrackTest.updateAnddeleteTimeEntry()'><b>updateAnddeleteTimeEntry</b><br>Test class: testCases.TimeTrackTest</td>
+<td><div><pre>java.lang.AssertionError: Check Box  -  element not clickable
 	at utils.WebBasePage.click(WebBasePage.java:121)
-	at pageObjects.TimeSheetPage.clickOnShowTimeSheet(TimeSheetPage.java:70)
-	at Action.TimeSheetAction.clickOnSendForApproval(TimeSheetAction.java:76)
-	at testCases.TimeApprovalTest.ValidateTimeSheetApproveFunctionality(TimeApprovalTest.java:93)
+	at pageObjects.TimeTrackPage.clickOnActivityCheckBox(TimeTrackPage.java:237)
+	at pageObjects.TimeTrackPage.clickOnNonBillable(TimeTrackPage.java:246)
+	at Action.TimeTrackAction.updateRecordAndverifydeleteEntry(TimeTrackAction.java:92)
+	at testCases.TimeTrackTest.updateAnddeleteTimeEntry(TimeTrackTest.java:100)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1824225731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1824225731'><pre>java.lang.AssertionError:  Show time sheet -  element not clickable
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace180694581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace180694581'><pre>java.lang.AssertionError: Check Box  -  element not clickable
 	at org.testng.Assert.fail(Assert.java:99)
 	at utils.WebBasePage.click(WebBasePage.java:121)
-	at pageObjects.TimeSheetPage.clickOnShowTimeSheet(TimeSheetPage.java:70)
-	at Action.TimeSheetAction.clickOnSendForApproval(TimeSheetAction.java:76)
-	at testCases.TimeApprovalTest.ValidateTimeSheetApproveFunctionality(TimeApprovalTest.java:93)
+	at pageObjects.TimeTrackPage.clickOnActivityCheckBox(TimeTrackPage.java:237)
+	at pageObjects.TimeTrackPage.clickOnNonBillable(TimeTrackPage.java:246)
+	at Action.TimeTrackAction.updateRecordAndverifydeleteEntry(TimeTrackAction.java:92)
+	at testCases.TimeTrackTest.updateAnddeleteTimeEntry(TimeTrackTest.java:100)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,8 +652,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>296</td>
-<td>testCases.TimeApprovalTest@123ef382</td></tr>
+<td>184</td>
+<td>testCases.TimeTrackTest@123ef382</td></tr>
 <tr>
 <td title='testCases.TimeTrackTest.startTimeTrack()'><b>startTimeTrack</b><br>Test class: testCases.TimeTrackTest</td>
 <td><div><pre>java.lang.AssertionError: select Your tag name -  element not clickable
@@ -220,8 +662,8 @@ function toggleAllBoxes() {
 	at Action.TimeTrackAction.startTimeTrack(TimeTrackAction.java:41)
 	at testCases.TimeTrackTest.startTimeTrack(TimeTrackTest.java:50)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace276882732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace276882732'><pre>java.lang.AssertionError: select Your tag name -  element not clickable
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252304327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252304327'><pre>java.lang.AssertionError: select Your tag name -  element not clickable
 	at org.testng.Assert.fail(Assert.java:99)
 	at utils.WebBasePage.click(WebBasePage.java:121)
 	at pageObjects.TimeTrackPage.clickOnSelectTagName(TimeTrackPage.java:168)
@@ -256,18 +698,331 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>223</td>
-<td>testCases.TimeTrackTest@441772e</td></tr>
+<td>287</td>
+<td>testCases.TimeTrackTest@123ef382</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfentryWiseReportwithUsername()'><b>ValidationOfentryWiseReportwithUsername</b><br>Test class: testCases.TimeReportTest</td>
+<td><div><pre>java.lang.AssertionError: Close user Dropdown -  element not clickable
+	at utils.WebBasePage.click(WebBasePage.java:121)
+	at pageObjects.TimeReportPage.clickOnUser(TimeReportPage.java:86)
+	at Action.TimeReportAction.checkEntrywiseReportWithUsername(TimeReportAction.java:102)
+	at testCases.TimeReportTest.ValidationOfentryWiseReportwithUsername(TimeReportTest.java:153)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2065412124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2065412124'><pre>java.lang.AssertionError: Close user Dropdown -  element not clickable
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.click(WebBasePage.java:121)
+	at pageObjects.TimeReportPage.clickOnUser(TimeReportPage.java:86)
+	at Action.TimeReportAction.checkEntrywiseReportWithUsername(TimeReportAction.java:102)
+	at testCases.TimeReportTest.ValidationOfentryWiseReportwithUsername(TimeReportTest.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>235</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackTest.VerifyTimeTrackactivity()'><b>VerifyTimeTrackactivity</b><br>Test class: testCases.TimeTrackTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;clsspauseresume&apos;]/tbody/tr/td[@class=&apos;inherit&apos;]/a&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d6607596180c0d3be3a7dd0b68d19ed
+*** Element info: {Using=xpath, value=//table[@id=&apos;clsspauseresume&apos;]/tbody/tr/td[@class=&apos;inherit&apos;]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.TimeTrackPage.verifyTimeTrackdata(TimeTrackPage.java:211)
+	at Action.TimeTrackAction.verifyActivityInListingArea(TimeTrackAction.java:83)
+	at testCases.TimeTrackTest.VerifyTimeTrackactivity(TimeTrackTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051558645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051558645'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;clsspauseresume&apos;]/tbody/tr/td[@class=&apos;inherit&apos;]/a&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d6607596180c0d3be3a7dd0b68d19ed
+*** Element info: {Using=xpath, value=//table[@id=&apos;clsspauseresume&apos;]/tbody/tr/td[@class=&apos;inherit&apos;]/a}
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.TimeTrackPage.verifyTimeTrackdata(TimeTrackPage.java:211)
+	at Action.TimeTrackAction.verifyActivityInListingArea(TimeTrackAction.java:83)
+	at testCases.TimeTrackTest.VerifyTimeTrackactivity(TimeTrackTest.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>138</td>
+<td>testCases.TimeTrackTest@123ef382</td></tr>
+<tr>
+<td title='testCases.TimeApprovalTest.ValidateTimeSheetRejectionFunctionality()'><b>ValidateTimeSheetRejectionFunctionality</b><br>Test class: testCases.TimeApprovalTest</td>
+<td><div><pre>java.lang.AssertionError: Add Hours  -  element not present
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.clickOnSendForApproval(TimeSheetAction.java:78)
+	at testCases.TimeApprovalTest.ValidateTimeSheetRejectionFunctionality(TimeApprovalTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace653745564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace653745564'><pre>java.lang.AssertionError: Add Hours  -  element not present
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.clickOnSendForApproval(TimeSheetAction.java:78)
+	at testCases.TimeApprovalTest.ValidateTimeSheetRejectionFunctionality(TimeApprovalTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>424</td>
+<td>testCases.TimeApprovalTest@402bba4f</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfClientReportWithUserName()'><b>ValidationOfClientReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
+<td><div><pre>java.lang.AssertionError: Close user Dropdown -  element not clickable
+	at utils.WebBasePage.click(WebBasePage.java:121)
+	at pageObjects.TimeReportPage.clickOnUser(TimeReportPage.java:86)
+	at Action.TimeReportAction.checkClientReportwithUserName(TimeReportAction.java:74)
+	at testCases.TimeReportTest.ValidationOfClientReportWithUserName(TimeReportTest.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31874125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31874125'><pre>java.lang.AssertionError: Close user Dropdown -  element not clickable
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.click(WebBasePage.java:121)
+	at pageObjects.TimeReportPage.clickOnUser(TimeReportPage.java:86)
+	at Action.TimeReportAction.checkClientReportwithUserName(TimeReportAction.java:74)
+	at testCases.TimeReportTest.ValidationOfClientReportWithUserName(TimeReportTest.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>138</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeSheetTest.validatefunctionalityOfTimeSheet()'><b>validatefunctionalityOfTimeSheet</b><br>Test class: testCases.TimeSheetTest</td>
+<td><div><pre>java.lang.AssertionError: Add Hours  -  element not present
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.checkFunctionalityOfTimesheetForTimeSheet(TimeSheetAction.java:58)
+	at testCases.TimeSheetTest.validatefunctionalityOfTimeSheet(TimeSheetTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1840394190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1840394190'><pre>java.lang.AssertionError: Add Hours  -  element not present
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.checkFunctionalityOfTimesheetForTimeSheet(TimeSheetAction.java:58)
+	at testCases.TimeSheetTest.validatefunctionalityOfTimeSheet(TimeSheetTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>569</td>
+<td>testCases.TimeSheetTest@59fd97a8</td></tr>
+<tr>
+<td title='testCases.TimeApprovalTest.ValidateTimeSheetApproveFunctionality()'><b>ValidateTimeSheetApproveFunctionality</b><br>Test class: testCases.TimeApprovalTest</td>
+<td><div><pre>java.lang.AssertionError: Add Hours  -  element not present
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.clickOnSendForApproval(TimeSheetAction.java:78)
+	at testCases.TimeApprovalTest.ValidateTimeSheetApproveFunctionality(TimeApprovalTest.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace89144445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace89144445'><pre>java.lang.AssertionError: Add Hours  -  element not present
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.click(WebBasePage.java:128)
+	at pageObjects.TimeSheetPage.clickOnAddHours(TimeSheetPage.java:96)
+	at Action.TimeSheetAction.clickOnSendForApproval(TimeSheetAction.java:78)
+	at testCases.TimeApprovalTest.ValidateTimeSheetApproveFunctionality(TimeApprovalTest.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>128</td>
+<td>testCases.TimeApprovalTest@402bba4f</td></tr>
 <tr>
 <td title='testCases.WorkDairyTest.validationOfScreenShot()'><b>validationOfScreenShot</b><br>Test class: testCases.WorkDairyTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;divscreenslist&apos;]//ul/li/div[@class=&apos;card-box screenshot&apos;]&quot;}
-  (Session info: chrome=108.0.5359.96)
+  (Session info: chrome=115.0.5790.171)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c81e4ac3c69a48577910e41f9126ca6d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecb0d9d5d4b95d2c95a99d8b7260c859
 *** Element info: {Using=xpath, value=//div[@id=&apos;divscreenslist&apos;]//ul/li/div[@class=&apos;card-box screenshot&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -283,15 +1038,15 @@ Session ID: c81e4ac3c69a48577910e41f9126ca6d
 	at Action.WorkDairyAction.ValidateScreenShot(WorkDairyAction.java:33)
 	at testCases.WorkDairyTest.validationOfScreenShot(WorkDairyTest.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace163048522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace163048522'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;divscreenslist&apos;]//ul/li/div[@class=&apos;card-box screenshot&apos;]&quot;}
-  (Session info: chrome=108.0.5359.96)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2070825712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2070825712'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;divscreenslist&apos;]//ul/li/div[@class=&apos;card-box screenshot&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c81e4ac3c69a48577910e41f9126ca6d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecb0d9d5d4b95d2c95a99d8b7260c859
 *** Element info: {Using=xpath, value=//div[@id=&apos;divscreenslist&apos;]//ul/li/div[@class=&apos;card-box screenshot&apos;]}
 	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -339,35 +1094,412 @@ Session ID: c81e4ac3c69a48577910e41f9126ca6d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>44</td>
-<td>testCases.WorkDairyTest@7334aada</td></tr>
+<td>51</td>
+<td>testCases.WorkDairyTest@dbf57b3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='testCases.TimeSheetTest.validatefunctionalityOfTimeSheet()'><b>validatefunctionalityOfTimeSheet</b><br>Test class: testCases.TimeSheetTest</td>
-<td><div><pre>java.lang.AssertionError: select Your tag name -  element not clickable
-	at utils.WebBasePage.click(WebBasePage.java:121)
-	at pageObjects.TimeTrackPage.clickOnSelectTagName(TimeTrackPage.java:168)
-	at Action.TimeTrackAction.startTimeTrack(TimeTrackAction.java:41)
-	at testCases.TimeSheetTest.validatefunctionalityOfTimeSheet(TimeSheetTest.java:46)
+<td title='testCases.TimeReportTest.ValidationOfprofitabilityProjectReportwithProjectName()'><b>ValidationOfprofitabilityProjectReportwithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>156</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackTest.VerifyclanderViewFunctionality()'><b>VerifyclanderViewFunctionality</b><br>Test class: testCases.TimeTrackTest</td>
+<td></td>
+<td>197</td>
+<td>testCases.TimeTrackTest@123ef382</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfUserWiseReportWithProjectName()'><b>ValidationOfUserWiseReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>159</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackForFlagTrackEntryTest.updateAnddeleteTimeEntry()'><b>updateAnddeleteTimeEntry</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
+<td></td>
+<td>511</td>
+<td>testCases.TimeTrackForFlagTrackEntryTest@f5ac9e4</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfHalfYearlyProjectReportwithUserName()'><b>ValidationOfHalfYearlyProjectReportwithUserName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>316</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeApprovalTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeApprovalTest</td>
+<td></td>
+<td>39</td>
+<td>testCases.TimeApprovalTest@402bba4f</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithDepartmentname()'><b>ValidationOfTrackEnrtyDetailsReportWithDepartmentname</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>205</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackForFlagTrackEntryTest.startTimeTrack()'><b>startTimeTrack</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
+<td></td>
+<td>335</td>
+<td>testCases.TimeTrackForFlagTrackEntryTest@f5ac9e4</td></tr>
+<tr>
+<td title='testCases.WorkDairyTest.validationCheckOfWorkDairy()'><b>validationCheckOfWorkDairy</b><br>Test class: testCases.WorkDairyTest</td>
+<td></td>
+<td>42</td>
+<td>testCases.WorkDairyTest@dbf57b3</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectReportWithPriojectname()'><b>ValidationOfProjectReportWithPriojectname</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>240</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackForFlagTrackEntryTest.validatetimeEntryThroughFilter()'><b>validatetimeEntryThroughFilter</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
+<td></td>
+<td>336</td>
+<td>testCases.TimeTrackForFlagTrackEntryTest@f5ac9e4</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfentryWiseReportwithProjectName()'><b>ValidationOfentryWiseReportwithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>169</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectDetailsReportWithUsername()'><b>ValidationOfProjectDetailsReportWithUsername</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>219</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackTest.validatetimeEntryThroughFilter()'><b>validatetimeEntryThroughFilter</b><br>Test class: testCases.TimeTrackTest</td>
+<td></td>
+<td>399</td>
+<td>testCases.TimeTrackTest@123ef382</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfHalfYearlyProjectReportwithDepartmentName()'><b>ValidationOfHalfYearlyProjectReportwithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>230</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectwiseReportWithTeamMemeber()'><b>ValidationOfProjectwiseReportWithTeamMemeber</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>215</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfTimeSheetReportWithUsername()'><b>ValidationOfTimeSheetReportWithUsername</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>244</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOneMonthProjectReportWithUserName()'><b>ValidationOneMonthProjectReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>117</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackForFlagTrackEntryTest.VerifyTimeTrackactivity()'><b>VerifyTimeTrackactivity</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
+<td></td>
+<td>152</td>
+<td>testCases.TimeTrackForFlagTrackEntryTest@f5ac9e4</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfOneWeekProjectReportWithDepartmentName()'><b>ValidationOfOneWeekProjectReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>215</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfHalfYearlyProjectReportwithProjectName()'><b>ValidationOfHalfYearlyProjectReportwithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>269</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfUserReportWithusername()'><b>ValidationOfUserReportWithusername</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>187</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectDetailsReportWithProjectname()'><b>ValidationOfProjectDetailsReportWithProjectname</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>270</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.AuditRuleTest.validationCheck()'><b>validationCheck</b><br>Test class: testCases.AuditRuleTest</td>
+<td></td>
+<td>50</td>
+<td>testCases.AuditRuleTest@20deea7f</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfClientReportWithProjectName()'><b>ValidationOfClientReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>133</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeTrackTest</td>
+<td></td>
+<td>93</td>
+<td>testCases.TimeTrackTest@123ef382</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectwiseReportWithProjectName()'><b>ValidationOfProjectwiseReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>198</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOneMonthProjectReportWithDepartmentName()'><b>ValidationOneMonthProjectReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>146</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectReportWithUsername()'><b>ValidationOfProjectReportWithUsername</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>197</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.AuditRuleTest.validationCheckOfAuditRuleName()'><b>validationCheckOfAuditRuleName</b><br>Test class: testCases.AuditRuleTest</td>
+<td></td>
+<td>70</td>
+<td>testCases.AuditRuleTest@20deea7f</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithProjectName()'><b>ValidationOfTrackEnrtyDetailsReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>180</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfprofitabilityProjectReportwithchannelName()'><b>ValidationOfprofitabilityProjectReportwithchannelName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>263</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackForFlagTrackEntryTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
+<td></td>
+<td>70</td>
+<td>testCases.TimeTrackForFlagTrackEntryTest@f5ac9e4</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfClientReportWithDepartmentName()'><b>ValidationOfClientReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>219</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.AuditRuleTest.validationCheckOfAuditRemove()'><b>validationCheckOfAuditRemove</b><br>Test class: testCases.AuditRuleTest</td>
+<td></td>
+<td>82</td>
+<td>testCases.AuditRuleTest@20deea7f</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfTimeSheetReportWithProjectname()'><b>ValidationOfTimeSheetReportWithProjectname</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>209</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfOneWeekProjectReportWithUserName()'><b>ValidationOfOneWeekProjectReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>197</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackForFlagTrackEntryTest.VerifyclanderViewFunctionality()'><b>VerifyclanderViewFunctionality</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
+<td></td>
+<td>178</td>
+<td>testCases.TimeTrackForFlagTrackEntryTest@f5ac9e4</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfUserWiseReportWithDepartmentName()'><b>ValidationOfUserWiseReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>169</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfOneWeekProjectReportWithProjectName()'><b>ValidationOfOneWeekProjectReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>220</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfentryWiseReportwithDepartmentName()'><b>ValidationOfentryWiseReportwithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>184</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectDetailsReportWithDepartmentname()'><b>ValidationOfProjectDetailsReportWithDepartmentname</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>301</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOneMonthProjectReportWithProjectName()'><b>ValidationOneMonthProjectReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>413</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeTrackForFlagTrackEntryTest.validateAddTimeEntryManually()'><b>validateAddTimeEntryManually</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
+<td></td>
+<td>121</td>
+<td>testCases.TimeTrackForFlagTrackEntryTest@f5ac9e4</td></tr>
+<tr>
+<td title='testCases.AuditRuleTest.validationCheckOfAuditUpdate()'><b>validationCheckOfAuditUpdate</b><br>Test class: testCases.AuditRuleTest</td>
+<td></td>
+<td>93</td>
+<td>testCases.AuditRuleTest@20deea7f</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>58</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.AuditRuleTest.addNewAuditRuleWithEqualTimeTrackingHour()'><b>addNewAuditRuleWithEqualTimeTrackingHour</b><br>Test class: testCases.AuditRuleTest</td>
+<td></td>
+<td>222</td>
+<td>testCases.AuditRuleTest@20deea7f</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfUserReportWithProjectname()'><b>ValidationOfUserReportWithProjectname</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>249</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfProjectReportWithDepartnamename()'><b>ValidationOfProjectReportWithDepartnamename</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>238</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfUserReportWithDepartmentname()'><b>ValidationOfUserReportWithDepartmentname</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>211</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeReportTest.ValidationOfUserWiseReportWithUserName()'><b>ValidationOfUserWiseReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
+<td></td>
+<td>151</td>
+<td>testCases.TimeReportTest@795cd85e</td></tr>
+<tr>
+<td title='testCases.TimeSheetTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeSheetTest</td>
+<td></td>
+<td>36</td>
+<td>testCases.TimeSheetTest@59fd97a8</td></tr>
+<tr>
+<td title='testCases.TimeTrackTest.validateAddTimeEntryManually()'><b>validateAddTimeEntryManually</b><br>Test class: testCases.TimeTrackTest</td>
+<td></td>
+<td>413</td>
+<td>testCases.TimeTrackTest@123ef382</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.BulkTimeEntryTest.validationCheckOfBulkTimeEntry()'><b>validationCheckOfBulkTimeEntry</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace689815171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace689815171'><pre>java.lang.AssertionError: select Your tag name -  element not clickable
-	at org.testng.Assert.fail(Assert.java:99)
-	at utils.WebBasePage.click(WebBasePage.java:121)
-	at pageObjects.TimeTrackPage.clickOnSelectTagName(TimeTrackPage.java:168)
-	at Action.TimeTrackAction.startTimeTrack(TimeTrackAction.java:41)
-	at testCases.TimeSheetTest.validatefunctionalityOfTimeSheet(TimeSheetTest.java:46)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1929576211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1929576211'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
@@ -385,331 +1517,576 @@ Session ID: c81e4ac3c69a48577910e41f9126ca6d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>233</td>
-<td>testCases.TimeSheetTest@384ad17b</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfUserWiseReportWithUserName()'><b>ValidationOfUserWiseReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>120</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackForFlagTrackEntryTest.VerifyTimeTrackactivity()'><b>VerifyTimeTrackactivity</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
-<td></td>
-<td>126</td>
-<td>testCases.TimeTrackForFlagTrackEntryTest@61862a7f</td></tr>
-<tr>
-<td title='testCases.TimeTrackForFlagTrackEntryTest.validateAddTimeEntryManually()'><b>validateAddTimeEntryManually</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
-<td></td>
-<td>115</td>
-<td>testCases.TimeTrackForFlagTrackEntryTest@61862a7f</td></tr>
-<tr>
-<td title='testCases.TimeApprovalTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeApprovalTest</td>
-<td></td>
-<td>22</td>
-<td>testCases.TimeApprovalTest@123ef382</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfprofitabilityProjectReportwithProjectName()'><b>ValidationOfprofitabilityProjectReportwithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>153</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectDetailsReportWithProjectname()'><b>ValidationOfProjectDetailsReportWithProjectname</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>166</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.AuditRuleTest.addNewAuditRuleWithEqualTimeTrackingHour()'><b>addNewAuditRuleWithEqualTimeTrackingHour</b><br>Test class: testCases.AuditRuleTest</td>
-<td></td>
-<td>190</td>
-<td>testCases.AuditRuleTest@7714e963</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfTimeSheetReportWithUsername()'><b>ValidationOfTimeSheetReportWithUsername</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>148</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfentryWiseReportwithUsername()'><b>ValidationOfentryWiseReportwithUsername</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>120</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOneMonthProjectReportWithUserName()'><b>ValidationOneMonthProjectReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>73</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackTest.VerifyTimeTrackactivity()'><b>VerifyTimeTrackactivity</b><br>Test class: testCases.TimeTrackTest</td>
-<td></td>
-<td>104</td>
-<td>testCases.TimeTrackTest@441772e</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfHalfYearlyProjectReportwithDepartmentName()'><b>ValidationOfHalfYearlyProjectReportwithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>159</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackTest.validateAddTimeEntryManually()'><b>validateAddTimeEntryManually</b><br>Test class: testCases.TimeTrackTest</td>
-<td></td>
-<td>279</td>
-<td>testCases.TimeTrackTest@441772e</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectwiseReportWithTeamMemeber()'><b>ValidationOfProjectwiseReportWithTeamMemeber</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>143</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>37</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfUserWiseReportWithProjectName()'><b>ValidationOfUserWiseReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>117</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
 <tr>
 <td title='testCases.BulkTimeEntryTest.CheckFunctionalityOfResetBulkTimeEntryButtton()'><b>CheckFunctionalityOfResetBulkTimeEntryButtton</b><br>Test class: testCases.BulkTimeEntryTest</td>
-<td></td>
-<td>59</td>
-<td>testCases.BulkTimeEntryTest@59fd97a8</td></tr>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1714922341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1714922341'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
 <tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectwiseReportWithProjectName()'><b>ValidationOfProjectwiseReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>122</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.BulkTimeEntryTest.validationCheckOfAddMultipleBulkTimeEntryButtton()'><b>validationCheckOfAddMultipleBulkTimeEntryButtton</b><br>Test class: testCases.BulkTimeEntryTest</td>
-<td></td>
-<td>54</td>
-<td>testCases.BulkTimeEntryTest@59fd97a8</td></tr>
-<tr>
-<td title='testCases.TimeSheetTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeSheetTest</td>
-<td></td>
-<td>25</td>
-<td>testCases.TimeSheetTest@384ad17b</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOneMonthProjectReportWithDepartmentName()'><b>ValidationOneMonthProjectReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>90</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackForFlagTrackEntryTest.VerifyclanderViewFunctionality()'><b>VerifyclanderViewFunctionality</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
-<td></td>
-<td>230</td>
-<td>testCases.TimeTrackForFlagTrackEntryTest@61862a7f</td></tr>
+<td title='testCases.BulkTimeEntryTest.addBulkTimeEntry()'><b>addBulkTimeEntry</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2131366717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2131366717'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
 <tr>
 <td title='testCases.BulkTimeEntryTest.CheckFunctionalityOfDeleteBulkTimeEntryButtton()'><b>CheckFunctionalityOfDeleteBulkTimeEntryButtton</b><br>Test class: testCases.BulkTimeEntryTest</td>
-<td></td>
-<td>60</td>
-<td>testCases.BulkTimeEntryTest@59fd97a8</td></tr>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace639343159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace639343159'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
 <tr>
-<td title='testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithProjectName()'><b>ValidationOfTrackEnrtyDetailsReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>108</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfUserReportWithDepartmentname()'><b>ValidationOfUserReportWithDepartmentname</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>171</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfClientReportWithDepartmentName()'><b>ValidationOfClientReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>125</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfHalfYearlyProjectReportwithUserName()'><b>ValidationOfHalfYearlyProjectReportwithUserName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>159</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfUserWiseReportWithDepartmentName()'><b>ValidationOfUserWiseReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>119</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.BulkTimeEntryTest.validationCheckOfBulkTimeEntry()'><b>validationCheckOfBulkTimeEntry</b><br>Test class: testCases.BulkTimeEntryTest</td>
-<td></td>
-<td>28</td>
-<td>testCases.BulkTimeEntryTest@59fd97a8</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOneMonthProjectReportWithProjectName()'><b>ValidationOneMonthProjectReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>267</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackForFlagTrackEntryTest.startTimeTrack()'><b>startTimeTrack</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
-<td></td>
-<td>244</td>
-<td>testCases.TimeTrackForFlagTrackEntryTest@61862a7f</td></tr>
-<tr>
-<td title='testCases.AuditRuleTest.validationCheckOfAuditRuleName()'><b>validationCheckOfAuditRuleName</b><br>Test class: testCases.AuditRuleTest</td>
-<td></td>
-<td>53</td>
-<td>testCases.AuditRuleTest@7714e963</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfprofitabilityProjectReportwithchannelName()'><b>ValidationOfprofitabilityProjectReportwithchannelName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>178</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfUserReportWithusername()'><b>ValidationOfUserReportWithusername</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>119</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackTest.VerifyclanderViewFunctionality()'><b>VerifyclanderViewFunctionality</b><br>Test class: testCases.TimeTrackTest</td>
-<td></td>
-<td>205</td>
-<td>testCases.TimeTrackTest@441772e</td></tr>
-<tr>
-<td title='testCases.AuditRuleTest.validationCheck()'><b>validationCheck</b><br>Test class: testCases.AuditRuleTest</td>
-<td></td>
-<td>35</td>
-<td>testCases.AuditRuleTest@7714e963</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithDepartmentname()'><b>ValidationOfTrackEnrtyDetailsReportWithDepartmentname</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>124</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeSheetTest.validateSendForApproval()'><b>validateSendForApproval</b><br>Test class: testCases.TimeSheetTest</td>
-<td></td>
-<td>311</td>
-<td>testCases.TimeSheetTest@384ad17b</td></tr>
-<tr>
-<td title='testCases.ProjectListingTest.addProjectWithDefaultTemplate()'><b>addProjectWithDefaultTemplate</b><br>Test class: testCases.ProjectListingTest</td>
-<td></td>
-<td>114</td>
-<td>testCases.ProjectListingTest@f5ac9e4</td></tr>
-<tr>
-<td title='testCases.TimeTrackTest.validatetimeEntryThroughFilter()'><b>validatetimeEntryThroughFilter</b><br>Test class: testCases.TimeTrackTest</td>
-<td></td>
-<td>368</td>
-<td>testCases.TimeTrackTest@441772e</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfentryWiseReportwithDepartmentName()'><b>ValidationOfentryWiseReportwithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>151</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectDetailsReportWithDepartmentname()'><b>ValidationOfProjectDetailsReportWithDepartmentname</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>157</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.AuditRuleTest.validationCheckOfAuditRemove()'><b>validationCheckOfAuditRemove</b><br>Test class: testCases.AuditRuleTest</td>
-<td></td>
-<td>61</td>
-<td>testCases.AuditRuleTest@7714e963</td></tr>
-<tr>
-<td title='testCases.WorkDairyTest.validationCheckOfWorkDairy()'><b>validationCheckOfWorkDairy</b><br>Test class: testCases.WorkDairyTest</td>
-<td></td>
-<td>27</td>
-<td>testCases.WorkDairyTest@7334aada</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectReportWithDepartnamename()'><b>ValidationOfProjectReportWithDepartnamename</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>147</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfClientReportWithProjectName()'><b>ValidationOfClientReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>152</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackForFlagTrackEntryTest.validatetimeEntryThroughFilter()'><b>validatetimeEntryThroughFilter</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
-<td></td>
-<td>379</td>
-<td>testCases.TimeTrackForFlagTrackEntryTest@61862a7f</td></tr>
-<tr>
-<td title='testCases.TimeTrackForFlagTrackEntryTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeTrackForFlagTrackEntryTest</td>
-<td></td>
-<td>45</td>
-<td>testCases.TimeTrackForFlagTrackEntryTest@61862a7f</td></tr>
-<tr>
-<td title='testCases.AuditRuleTest.validationCheckOfAuditUpdate()'><b>validationCheckOfAuditUpdate</b><br>Test class: testCases.AuditRuleTest</td>
-<td></td>
-<td>63</td>
-<td>testCases.AuditRuleTest@7714e963</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfHalfYearlyProjectReportwithProjectName()'><b>ValidationOfHalfYearlyProjectReportwithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>171</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectReportWithPriojectname()'><b>ValidationOfProjectReportWithPriojectname</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>135</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfentryWiseReportwithProjectName()'><b>ValidationOfentryWiseReportwithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>133</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfTrackEnrtyDetailsReportWithUserName()'><b>ValidationOfTrackEnrtyDetailsReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>133</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfUserReportWithProjectname()'><b>ValidationOfUserReportWithProjectname</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>122</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfClientReportWithUserName()'><b>ValidationOfClientReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>121</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.ProjectListingTest.deleteProjectFromList()'><b>deleteProjectFromList</b><br>Test class: testCases.ProjectListingTest</td>
-<td></td>
-<td>86</td>
-<td>testCases.ProjectListingTest@f5ac9e4</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectReportWithUsername()'><b>ValidationOfProjectReportWithUsername</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>119</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfOneWeekProjectReportWithUserName()'><b>ValidationOfOneWeekProjectReportWithUserName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>158</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfOneWeekProjectReportWithProjectName()'><b>ValidationOfOneWeekProjectReportWithProjectName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>174</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfProjectDetailsReportWithUsername()'><b>ValidationOfProjectDetailsReportWithUsername</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>172</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfTimeSheetReportWithProjectname()'><b>ValidationOfTimeSheetReportWithProjectname</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>114</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
-<tr>
-<td title='testCases.TimeTrackTest.ValidationCheck()'><b>ValidationCheck</b><br>Test class: testCases.TimeTrackTest</td>
-<td></td>
-<td>53</td>
-<td>testCases.TimeTrackTest@441772e</td></tr>
-<tr>
-<td title='testCases.TimeReportTest.ValidationOfOneWeekProjectReportWithDepartmentName()'><b>ValidationOfOneWeekProjectReportWithDepartmentName</b><br>Test class: testCases.TimeReportTest</td>
-<td></td>
-<td>157</td>
-<td>testCases.TimeReportTest@dbf57b3</td></tr>
+<td title='testCases.BulkTimeEntryTest.validationCheckOfAddMultipleBulkTimeEntryButtton()'><b>validationCheckOfAddMultipleBulkTimeEntryButtton</b><br>Test class: testCases.BulkTimeEntryTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181041291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1181041291'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00FBA813+48355]
+	(No symbol) [0x00F4C4B1]
+	(No symbol) [0x00E55358]
+	(No symbol) [0x00E75714]
+	(No symbol) [0x00E71DA1]
+	(No symbol) [0x00E70579]
+	(No symbol) [0x00EA0C55]
+	(No symbol) [0x00EA093C]
+	(No symbol) [0x00E9A536]
+	(No symbol) [0x00E782DC]
+	(No symbol) [0x00E793DD]
+	GetHandleVerifier [0x0121AABD+2539405]
+	GetHandleVerifier [0x0125A78F+2800735]
+	GetHandleVerifier [0x0125456C+2775612]
+	GetHandleVerifier [0x010451E0+616112]
+	(No symbol) [0x00F55F8C]
+	(No symbol) [0x00F52328]
+	(No symbol) [0x00F5240B]
+	(No symbol) [0x00F44FF7]
+	BaseThreadInitThunk [0x75B500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77387B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77387B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at utils.Drivers.getWebDriver(Drivers.java:59)
+	at utils.WebTestBase.setUp(WebTestBase.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.BulkTimeEntryTest@6e171cd7</td></tr>
 </table><p>
 </body>
 </html>

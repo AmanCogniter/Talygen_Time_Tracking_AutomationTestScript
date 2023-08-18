@@ -47,7 +47,7 @@ public class TimeApprovalPage extends WebBasePage {
 	    }
 	     public void clickTimeTrackingLink()
 	     {
-	    	 clickByJavascript(By.xpath("//a[@data-toggle='popover']/ancestor::li[@id='menuitem23']/span[@class='fa  fa-angle-right gotosub']"),"Time Tracking", 30);
+	    	 clickByJavascript(By.xpath("//div/ul/li[@data-name='Time Tracking']/span"),"Time Tracking", 30);
 	    	 staticWait(2000);
 	     }
 	     public void clickTimeApprovalPage()
@@ -77,7 +77,7 @@ public class TimeApprovalPage extends WebBasePage {
 	     public void clickOncheckBox() {
 	    	 staticWait(5000);
 	    	 //waitForVisibilityOfElement(By.xpath("//tbody/tr/td[@class='td1 text-center']/div[@class='custom-control custom-checkbox']"), 50);
-	    	 click(By.xpath("//tbody/tr/td[@class='td1 text-center']/div[@class='custom-control custom-checkbox']")," Check Box", 30);
+	    	 click(By.xpath("//table/thead/tr/th[@class='text-center']/div[@class='custom-control custom-checkbox']")," Check Box", 30);
 
 	     }
 	     public void clickOnReject() {
@@ -122,6 +122,28 @@ public class TimeApprovalPage extends WebBasePage {
 	    	 clickByJavascript(By.xpath("//span/a[@id='divApprove']")," Approve", 30);
 
 	     }
+	     
+	     public void clickOnUser() {
+	    	 waitForVisibilityOfElement(By.xpath("//div/h5/a/span[@id='userId']"), 50);
+	    	 clickByJavascript(By.xpath("//div/h5/a/span[@id='userId']")," User Text Field", 30);
+
+	     }
+	     public void enterUserName() {
+	    	 waitForVisibilityOfElement(By.xpath("//div/input[@placeholder='Search']"), 50);
+	    	
+	    	 enter(By.xpath("//div/input[@placeholder='Search']"), prop.getProperty("searchUser"), "User name", 50);
+	     }
+	     public void clickOnradioButton() {
+	    	
+	    	 click(By.xpath("//div/label[contains(text(),'"+prop.getProperty("searchUser")+"')]")," Search Button", 30);
+
+	     }
+	     public void clickOnSearchButton() {
+	    	 waitForVisibilityOfElement(By.xpath("//span/a[@id='Go']"), 50);
+	    	 clickByJavascript(By.xpath("//span/a[@id='Go']")," Search Button", 30);
+
+	     }
+	     
 	     
 
 }

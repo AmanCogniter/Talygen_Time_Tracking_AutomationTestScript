@@ -35,7 +35,7 @@ public class TimeReportPage extends WebBasePage{
 	    }
 	    public void clickTimeTrackingLink()
 	     {
-	    	 clickByJavascript(By.xpath("//a[@data-toggle='popover']/ancestor::li[@id='menuitem23']/span[@class='fa  fa-angle-right gotosub']"),"Time Tracking", 30);
+	    	 clickByJavascript(By.xpath("//div/ul/li[@data-name='Time Tracking']/span"),"Time Tracking", 30);
 	    	 staticWait(2000);
 	     }
 	   
@@ -83,6 +83,7 @@ public class TimeReportPage extends WebBasePage{
         	click(By.xpath("//div/button[@title='Select User']/span"), "User", 30);
         	enter(By.xpath("//button[@title='Select User']/ancestor::div[@class='btn-group show']/descendant::div[@class='input-group']/input[@placeholder='Enter Keywords']"), "ginny", " User Name", 20);
         	click(By.xpath("//li/a/label[contains(text(), ' ginny . ( Human Resource ) ')]"), "select user", 30);
+        	click(By.xpath("(//div/button[@data-toggle='dropdown']/span)[last()]"), "Close user Dropdown", 30);
         }
         public void clickOnsearch() {
         	clickByJavascript(By.xpath("//div/a[@id='aSearch']"),"search Button", 30);

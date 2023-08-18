@@ -13,6 +13,7 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import utils.PropertiesLoader;
 import utils.WebBasePage;
@@ -45,7 +46,7 @@ WebDriver driver ;
 	    }
 	    public void clickTimeTrackingLink()
 	     {
-	    	 clickByJavascript(By.xpath("//a[@data-toggle='popover']/ancestor::li[@id='menuitem23']/span[@class='fa  fa-angle-right gotosub']"),"Time Tracking", 30);
+	    	 clickByJavascript(By.xpath("//div/ul/li[@data-name='Time Tracking']/span"),"Time Tracking", 30);
 	    	 staticWait(2000);
 	     }
 	     public void clickOnTimeSheetPage()
@@ -75,9 +76,9 @@ WebDriver driver ;
 	    	 staticWait(5000);
 	    	 click(By.xpath("//div/select[@id='ddlUser']")," User name", 30);
 	    	 staticWait(2000);
-	    	 selectValueWithText(By.xpath("//div/select[@id='ddlUser']"), "Randell Osterman", " User name", 20);
+	    	 selectValueWithText(By.xpath("//div/select[@id='ddlUser']"), prop.getProperty("searchUser"), " User name", 20);
 	    	 //enter(By.xpath("//div/select[@id='ddlUser']"), "Henry miller", " User name", 20);
-	    	 
+	    	 staticWait(2000);
 	     }
 	     public void enterUserForTimeSheet()
 	     {
@@ -86,6 +87,7 @@ WebDriver driver ;
 	    	 staticWait(2000);
 	    	 selectValueWithText(By.xpath("//div/select[@id='ddlUser']"), "David Bush", " User name", 20);
 	    	 //enter(By.xpath("//div/select[@id='ddlUser']"), "Henry miller", " User name", 20);
+	    	 staticWait(2000);
 	    	 
 	     }
 	     public void clickOnAddHours()
@@ -183,7 +185,7 @@ WebDriver driver ;
 	    	 
 	     }
 	     public void deleteWorkingHours() {
-	    	 staticWait(2000);
+	    	 staticWait(5000);
 	    	 click(By.xpath("//tbody/tr[@id='tbl-1']/td[@class='tabchild']/a")," Expand button", 30);
 	    	 staticWait(3000);
 	    	 clickByJavascript(By.xpath("//td/a[@class='aDelete']"), "Delete button", 30);
@@ -208,13 +210,18 @@ WebDriver driver ;
 	    	 staticWait(3000);
 	    	 click(By.xpath("//div/a[@id='btnSendForApproval']")," Send For Approval button", 30);
 	    	 staticWait(2000);
-	    	 click(By.xpath("//button[@title='OK']")," confirmation button", 30);
+	    	 click(By.xpath("//button[@data-original-title='OK']")," confirmation button", 30);
 	     }
 	     public void clickOnSendApprovalForTimeSheet() {
 	    	 staticWait(3000);
 	    	 click(By.xpath("//div/a[@id='btnSendForApproval']")," Send For Approval button", 30);
 	    	 staticWait(2000);
-	    	 click(By.xpath("//button[@title='OK']")," confirmation button", 30);
+	         click(By.xpath("//button[@data-original-title='OK']")," confirmation button", 30);
+				/*
+				 * WebElement okButton = driver.findElement(By.xpath("//button[@title='OK']"));
+				 * Actions action = new Actions(driver);
+				 * action.moveToElement(okButton).click().perform();
+				 */
 	     }
 	     public void validateSendApprovalConfirmationPopup() {
 	    	 staticWait(3000);

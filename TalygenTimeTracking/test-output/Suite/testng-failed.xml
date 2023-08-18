@@ -3,17 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.TimeApprovalTest">
+      <class name="testCases.TimeReportTest">
         <methods>
-          <include name="ValidateTimeSheetApproveFunctionality"/>
           <include name="closeBrowser"/>
           <include name="beforeMethod"/>
-          <include name="ValidateTimeSheetRejectionFunctionality"/>
+          <include name="ValidationOfClientReportWithUserName"/>
+          <include name="ValidationOfentryWiseReportwithUsername"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
+          <include name="ValidationOfTrackEnrtyDetailsReportWithUserName"/>
         </methods>
-      </class> <!-- testCases.TimeApprovalTest -->
+      </class> <!-- testCases.TimeReportTest -->
       <class name="testCases.WorkDairyTest">
         <methods>
           <include name="validationOfScreenShot"/>
@@ -26,17 +27,34 @@
       </class> <!-- testCases.WorkDairyTest -->
       <class name="testCases.TimeTrackTest">
         <methods>
+          <include name="updateAnddeleteTimeEntry"/>
           <include name="closeBrowser"/>
           <include name="beforeMethod"/>
           <include name="startTimeTrack"/>
+          <include name="VerifyTimeTrackactivity"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.TimeTrackTest -->
+      <class name="testCases.BulkTimeEntryTest">
+        <methods>
+          <include name="validationCheckOfBulkTimeEntry"/>
+          <include name="CheckFunctionalityOfResetBulkTimeEntryButtton"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+          <include name="CheckFunctionalityOfDeleteBulkTimeEntryButtton"/>
+          <include name="validationCheckOfAddMultipleBulkTimeEntryButtton"/>
+          <include name="addBulkTimeEntry"/>
+        </methods>
+      </class> <!-- testCases.BulkTimeEntryTest -->
       <class name="testCases.TimeSheetTest">
         <methods>
           <include name="closeBrowser"/>
+          <include name="validateSendForApproval"/>
           <include name="beforeMethod"/>
           <include name="validatefunctionalityOfTimeSheet"/>
           <include name="close"/>
@@ -44,16 +62,17 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.TimeSheetTest -->
-      <class name="testCases.BulkTimeEntryTest">
+      <class name="testCases.TimeApprovalTest">
         <methods>
+          <include name="ValidateTimeSheetApproveFunctionality"/>
           <include name="closeBrowser"/>
           <include name="beforeMethod"/>
+          <include name="ValidateTimeSheetRejectionFunctionality"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
-          <include name="addBulkTimeEntry"/>
         </methods>
-      </class> <!-- testCases.BulkTimeEntryTest -->
+      </class> <!-- testCases.TimeApprovalTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

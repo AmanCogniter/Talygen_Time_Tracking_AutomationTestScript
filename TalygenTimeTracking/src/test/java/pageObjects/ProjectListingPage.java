@@ -281,6 +281,7 @@ public class ProjectListingPage extends WebBasePage {
 		staticWait(3000);
 		click(By.xpath("//div/h5/a/span[text()='Project Name']"), "Project Name Text field", 20);
 		enter(By.xpath("//div/input[@placeholder='Search by Project Name']"), projectName, "Project Name", 30);
+		staticWait(2000);
 		click(By.xpath("//span[@data-original-title='Search']"), "Search Button", 20);
 		staticWait(3000);
 		clickByJavascript(
@@ -386,9 +387,10 @@ public class ProjectListingPage extends WebBasePage {
 	public void enterProjectnameInsearchtextField() {
 		staticWait(3000);
 		enter(By.xpath("//div/input[@placeholder='Search by Project Name']"), projectName, "Project Name", 20);
+		staticWait(1000);
 	}
 	public void clickOnsearchButton() {
-		staticWait(1000);
+		staticWait(2000);
 		click(By.xpath("//span[@data-original-title='Search']"), "Search Button", 20);
 	}
 	public void clickOnCheckBox() {
@@ -397,16 +399,29 @@ public class ProjectListingPage extends WebBasePage {
 	}
 	public void deleteItem() {
 		staticWait(1000);
-		clickByJavascript(By.xpath("//span/a[@id='DeleteItem']/i"),"Delete Button", 20);
-		waitForVisibilityOfElement(By.xpath("//div/button[@data-bb-handler='confirm']/i"), 50);
-		clickByJavascript(By.xpath("//div/button[@data-bb-handler='confirm']/i"),"Ok Button", 20);
+		
 		/*
 		 * WebElement clickok =
 		 * driver.findElement(By.xpath("//div/button[@data-bb-handler='confirm']/i"));
 		 * Actions action=new Actions(driver);
 		 * action.moveToElement(clickok).click().perform();
 		 */
-		logger.info("Project is deleted successfully");
+		clickByJavascript(By.xpath("//span/a[@id='DeleteItem']/i"),"Delete Button", 20);
+		staticWait(2000);
+		try {
+			WebElement notifyPopup = driver.findElement(By.xpath("//div[contains(text(),'Project(s) with time tracking cannot be deleted.')]"));
+			if (notifyPopup.isDisplayed()) {
+				logger.info("Project(s) with time tracking cannot be deleted. Click OK if you want to delete project(s) without time track.");
+				clickByJavascript(By.xpath("//div/button[@data-bb-handler='confirm']/i"),"Ok Button", 20);
+				logger.info("Project is deleted successfully");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			
+			waitForVisibilityOfElement(By.xpath("//div/button[@data-bb-handler='confirm']/i"), 50);
+			clickByJavascript(By.xpath("//div/button[@data-bb-handler='confirm']/i"),"Ok Button", 20);
+			logger.info("Project is deleted successfully");
+		}
 	}
 
 }

@@ -32,7 +32,7 @@ public class WorkDairyPage extends WebBasePage {
 	    }
 	    public void clickTimeTrackingLink()
 	     {
-	    	 clickByJavascript(By.xpath("//a[@data-toggle='popover']/ancestor::li[@id='menuitem23']/span[@class='fa  fa-angle-right gotosub']"),"Time Tracking", 30);
+	    	 clickByJavascript(By.xpath("//div/ul/li[@data-name='Time Tracking']/span"),"Time Tracking", 30);
 	    	 staticWait(2000);
 	     }
 	    public void clickOnWorkDairy()

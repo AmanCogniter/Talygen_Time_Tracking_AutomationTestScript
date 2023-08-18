@@ -54,7 +54,7 @@ public class TimeTrackPage extends WebBasePage {
 	    }
 	     public void clickTimeTrackingLink()
 	     {
-	    	 clickByJavascript(By.xpath("//a[@data-toggle='popover']/ancestor::li[@id='menuitem23']/span[@class='fa  fa-angle-right gotosub']"),"Time Tracking", 30);
+	    	 clickByJavascript(By.xpath("//div/ul/li[@data-name='Time Tracking']/span"),"Time Tracking", 30);
 	    	 staticWait(2000);
 	     }
 	     public void clickTimeTrackPage()
@@ -410,7 +410,8 @@ public class TimeTrackPage extends WebBasePage {
 	    	 click(By.xpath("//div/a[@show_type='BIRTHDAY']"), "Select Bithday ", 30);
 	    	 
 	    	 try {
-	    		 WebElement birthday = driver.findElement(By.xpath("//div[@class='fc-event-inner fc-event-skin birthday']/span[text()='Birthday(s)']"));
+	    		 staticWait(3000);
+	    		 WebElement birthday = driver.findElement(By.xpath("//div[@class='fc-event-inner fc-event-skin birthday']/span[contains(text(),'Birthday(s)')]"));
 	    		 if (birthday.isDisplayed()) {
 	 				logger.info("birthdays are visible in clander data");
 	 				}
@@ -481,7 +482,7 @@ public class TimeTrackPage extends WebBasePage {
 	    	 click(By.xpath("//div[contains(@class,'text-right buttonarea')]/button[@data-original-title='Save']"), "save button ", 30);
 	     }
 	     public void validateEvent() {
-	    	 staticWait(3000);
+	    	 staticWait(5000);
 	    	 click(By.xpath("//div/a[@show_type='MY_EVENT']"), "Select Event ", 30);
 	    	 try {
 	    		 WebElement event = driver.findElement(By.xpath("//div[@class='fc-event-inner fc-event-skin meeting editable']/span[contains(text(),'projectName')]"));

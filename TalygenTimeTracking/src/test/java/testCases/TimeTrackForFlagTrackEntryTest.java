@@ -67,7 +67,7 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 		timeTrackAction.checkClanderViewFunctionality();
 		
 	}
-	//@Test(priority=7)
+	@Test(priority=7)
 	public void updateAnddeleteTimeEntry() {
 		test=getTest(Screenname + ": Update and verify delete entry");
 		TimeTrackAction timeTrackAction = new TimeTrackAction(driver);
@@ -81,6 +81,10 @@ public class TimeTrackForFlagTrackEntryTest extends WebTestBase {
 		 * projectListingAction.enterProjectDescription();
 		 * projectListingAction.clickNextButton();
 		 */
+		  new LoginAction(driver).logoutLogin();
+			timeTrackAction.GoToTimeTrackPage();
+			timeTrackAction.startTimeTrackForFlagTrackEntry();
+		 
 		new LoginAction(driver).logoutLogin();
 		timeTrackAction.GoToTimeTrackPage();
 		timeTrackAction.updateRecordAndverifydeleteEntry();

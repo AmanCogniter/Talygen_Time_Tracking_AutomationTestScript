@@ -1,56 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-09T15:42:55 IST" name="Default suite" finished-at="2022-12-09T15:50:25 IST" duration-ms="450228">
+  <suite started-at="2023-08-18T03:41:11 IST" name="Default suite" finished-at="2023-08-18T04:15:11 IST" duration-ms="2040301">
     <groups>
     </groups>
-    <test started-at="2022-12-09T15:42:55 IST" name="Default test" finished-at="2022-12-09T15:50:25 IST" duration-ms="450228">
-      <class name="testCases.TimeSheetTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TimeSheetTest@30ee2816]" started-at="2022-12-09T15:42:55 IST" name="setUp" finished-at="2022-12-09T15:43:05 IST" duration-ms="9374" status="PASS">
+    <test started-at="2023-08-18T03:41:11 IST" name="Default test" finished-at="2023-08-18T04:15:11 IST" duration-ms="2040301">
+      <class name="testCases.TimeTrackTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:41:11 IST" name="setUp" finished-at="2023-08-18T03:41:24 IST" duration-ms="13190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeSheetTest@30ee2816]" started-at="2022-12-09T15:43:05 IST" name="beforeMethod" finished-at="2022-12-09T15:43:05 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:41:24 IST" name="beforeMethod" finished-at="2023-08-18T03:41:26 IST" duration-ms="1780" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testCases.TimeSheetTest.validatefunctionalityOfTimeSheet() throws java.awt.AWTException]]>
+                <![CDATA[public void testCases.TimeTrackTest.ValidationCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validatefunctionalityOfTimeSheet()[pri:2, instance:testCases.TimeSheetTest@30ee2816]" started-at="2022-12-09T15:43:05 IST" name="validatefunctionalityOfTimeSheet" finished-at="2022-12-09T15:50:25 IST" duration-ms="439993" status="PASS">
+        <test-method signature="ValidationCheck()[pri:1, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:41:26 IST" name="ValidationCheck" finished-at="2023-08-18T03:42:58 IST" duration-ms="91869" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatefunctionalityOfTimeSheet -->
-        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeSheetTest@30ee2816]" started-at="2022-12-09T15:50:25 IST" name="reportWrapUp" finished-at="2022-12-09T15:50:25 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- ValidationCheck -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:42:58 IST" name="reportWrapUp" finished-at="2023-08-18T03:42:58 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validatefunctionalityOfTimeSheet status=SUCCESS method=TimeSheetTest.validatefunctionalityOfTimeSheet()[pri:2, instance:testCases.TimeSheetTest@30ee2816] output={null}]]]>
+                <![CDATA[[TestResult name=ValidationCheck status=SUCCESS method=TimeTrackTest.ValidationCheck()[pri:1, instance:testCases.TimeTrackTest@c267ef4] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testCases.TimeSheetTest.validatefunctionalityOfTimeSheet() throws java.awt.AWTException]]>
+                <![CDATA[public void testCases.TimeTrackTest.ValidationCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TimeSheetTest@30ee2816]" started-at="2022-12-09T15:50:25 IST" name="closeBrowser" finished-at="2022-12-09T15:50:25 IST" duration-ms="677" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:42:58 IST" name="beforeMethod" finished-at="2023-08-18T03:42:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.startTimeTrack()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="startTimeTrack()[pri:2, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:42:58 IST" name="startTimeTrack" finished-at="2023-08-18T03:49:47 IST" duration-ms="408540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTimeTrack -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:49:47 IST" name="reportWrapUp" finished-at="2023-08-18T03:49:47 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=startTimeTrack status=SUCCESS method=TimeTrackTest.startTimeTrack()[pri:2, instance:testCases.TimeTrackTest@c267ef4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.startTimeTrack()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:49:47 IST" name="beforeMethod" finished-at="2023-08-18T03:49:47 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.VerifyTimeTrackactivity()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="VerifyTimeTrackactivity()[pri:3, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:49:47 IST" name="VerifyTimeTrackactivity" finished-at="2023-08-18T03:52:40 IST" duration-ms="173637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTimeTrackactivity -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:52:40 IST" name="reportWrapUp" finished-at="2023-08-18T03:52:40 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyTimeTrackactivity status=SUCCESS method=TimeTrackTest.VerifyTimeTrackactivity()[pri:3, instance:testCases.TimeTrackTest@c267ef4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.VerifyTimeTrackactivity()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:52:40 IST" name="beforeMethod" finished-at="2023-08-18T03:52:40 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.VerifyclanderViewFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="VerifyclanderViewFunctionality()[pri:4, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:52:40 IST" name="VerifyclanderViewFunctionality" finished-at="2023-08-18T03:57:04 IST" duration-ms="264123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyclanderViewFunctionality -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:57:04 IST" name="reportWrapUp" finished-at="2023-08-18T03:57:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyclanderViewFunctionality status=SUCCESS method=TimeTrackTest.VerifyclanderViewFunctionality()[pri:4, instance:testCases.TimeTrackTest@c267ef4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.VerifyclanderViewFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:57:04 IST" name="beforeMethod" finished-at="2023-08-18T03:57:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.validatetimeEntryThroughFilter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="validatetimeEntryThroughFilter()[pri:5, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T03:57:04 IST" name="validatetimeEntryThroughFilter" finished-at="2023-08-18T04:03:38 IST" duration-ms="393967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatetimeEntryThroughFilter -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:03:38 IST" name="reportWrapUp" finished-at="2023-08-18T04:03:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatetimeEntryThroughFilter status=SUCCESS method=TimeTrackTest.validatetimeEntryThroughFilter()[pri:5, instance:testCases.TimeTrackTest@c267ef4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.validatetimeEntryThroughFilter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:03:38 IST" name="beforeMethod" finished-at="2023-08-18T04:03:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.validateAddTimeEntryManually()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="validateAddTimeEntryManually()[pri:6, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:03:38 IST" name="validateAddTimeEntryManually" finished-at="2023-08-18T04:10:11 IST" duration-ms="393070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddTimeEntryManually -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:10:11 IST" name="reportWrapUp" finished-at="2023-08-18T04:10:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddTimeEntryManually status=SUCCESS method=TimeTrackTest.validateAddTimeEntryManually()[pri:6, instance:testCases.TimeTrackTest@c267ef4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.validateAddTimeEntryManually()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method signature="updateAnddeleteTimeEntry()[pri:7, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:10:12 IST" name="updateAnddeleteTimeEntry" finished-at="2023-08-18T04:15:10 IST" duration-ms="298455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAnddeleteTimeEntry -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:10:12 IST" name="beforeMethod" finished-at="2023-08-18T04:10:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.updateAnddeleteTimeEntry()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:15:10 IST" name="reportWrapUp" finished-at="2023-08-18T04:15:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateAnddeleteTimeEntry status=SUCCESS method=TimeTrackTest.updateAnddeleteTimeEntry()[pri:7, instance:testCases.TimeTrackTest@c267ef4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.TimeTrackTest.updateAnddeleteTimeEntry()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:15:10 IST" name="closeBrowser" finished-at="2023-08-18T04:15:11 IST" duration-ms="1461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TimeSheetTest@30ee2816]" started-at="2022-12-09T15:50:26 IST" name="close" finished-at="2022-12-09T15:50:26 IST" duration-ms="443" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TimeTrackTest@c267ef4]" started-at="2023-08-18T04:15:12 IST" name="close" finished-at="2023-08-18T04:15:12 IST" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- testCases.TimeSheetTest -->
+      </class> <!-- testCases.TimeTrackTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -33,6 +33,10 @@ public class TimeApprovalAction {
 	{
 	
 		//timeApprovalPage.clickTimeApprovalPage();
+		timeApprovalPage.clickOnUser();
+		timeApprovalPage.enterUserName();
+		timeApprovalPage.clickOnradioButton();
+		timeApprovalPage.clickOnSearchButton();
 		timeApprovalPage.clickOncheckBox();		
 		
 		timeApprovalPage.clickOnReject();
@@ -44,6 +48,10 @@ public class TimeApprovalAction {
 		
 	}
 	public void ApprovedApprovalOfTimeSheet() {
+		timeApprovalPage.clickOnUser();
+		timeApprovalPage.enterUserName();
+		timeApprovalPage.clickOnradioButton();
+		timeApprovalPage.clickOnSearchButton();
 		timeApprovalPage.clickOncheckBox();
 		timeApprovalPage.clickOnApprove();
 		timeApprovalPage.enterCommentTitle();
